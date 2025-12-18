@@ -7,9 +7,10 @@ namespace warehouse_operations_accounting_program.Interfaces
 {
     public interface IStorageUnit
     {
-        bool CanStore(Goods goods);
-        void AddGoods(Goods goods);
-        void RemoveGoods(Goods goods);
+        decimal FreeAreaCapacity();
+        decimal FreeVolumeCapacity();
+        bool CanStore(IGoods goods);
+        void AddGoods(IGoods goods);
+        void RemoveGoods(IGoods goods);
     }
-
 }
