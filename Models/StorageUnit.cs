@@ -7,7 +7,7 @@ namespace warehouse_operations_accounting_program.Models
 {
     public class StorageUnit : IStorageUnit
     {
-        protected readonly List<IGoods> goods = new();
+        protected readonly List<IGoodsCharacteristics> goods = new();
         public int Id { get; set; }
         public decimal AreaCapacity { get; set; }
         public decimal VolumeCapacity { get; set; }
@@ -22,13 +22,13 @@ namespace warehouse_operations_accounting_program.Models
         }
         public decimal FreeAreaCapacity() => AreaCapacity - OccupiedArea;
         public decimal FreeVolumeCapacity() => VolumeCapacity - OccupiedVolume;
-        public bool CanStore(IGoods goods) => OccupiedArea + goods.TotalArea() <= AreaCapacity || OccupiedVolume + goods.TotalVolume() <= VolumeCapacity;
-        public void AddGoods(IGoods goods)
+        public bool CanStore(IGoodsCharacteristics goods) => OccupiedArea + goods.TotalArea() <= AreaCapacity || OccupiedVolume + goods.TotalVolume() <= VolumeCapacity;
+        public void AddGoods(IGoodsCharacteristics goods)
         {
             if (!CanStore(goods)) throw new InvalidOperationException("Недостаточно места");
             this.goods.Add(goods);
         }
-        public void RemoveGoods(IGoods goods)
+        public void RemoveGoods(IGoodsCharacteristics goods)
         {
             this.goods.Remove(goods);
         }
