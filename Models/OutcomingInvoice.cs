@@ -7,7 +7,7 @@ namespace warehouse_operations_accounting_program.Models
 {
     public class OutcomingInvoice : Document
     {
-        public OutcomingInvoice(string operatorName, IWarehouse warehouse, DateTime date, IContractor owner) : base(operatorName, warehouse, date, owner) { }
+        public OutcomingInvoice(string operatorName, IContract contract, DateTime date) : base(operatorName, contract, date) { }
 
         public void ReleaseGoods(Goods goods)
         {

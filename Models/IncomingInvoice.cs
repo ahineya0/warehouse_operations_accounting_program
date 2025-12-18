@@ -7,11 +7,11 @@ namespace warehouse_operations_accounting_program.Models
 {
     public class IncomingInvoice : Document
     {
-        public IncomingInvoice(string operatorName, IWarehouse warehouse, DateTime date, IContractor owner) : base (operatorName, warehouse, date, owner) { }
+        public IncomingInvoice(string operatorName, IContract contract, DateTime date) : base (operatorName, contract, date) { }
 
-        public void AcceptGoods(Goods goods)
+        public void AcceptGoods(IGoods goods)
         {
-            if (!Warehouse.TryStoreGoods(goods))
+            if (!Contract.Warehouse.TryStoreGoods(goods))
                 throw new InvalidOperationException("Склад переполнен");
 
             this.goods.Add(goods);

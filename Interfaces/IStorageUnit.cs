@@ -9,8 +9,8 @@ namespace warehouse_operations_accounting_program.Interfaces
     {
         decimal FreeAreaCapacity();
         decimal FreeVolumeCapacity();
-        bool CanStore(IGoodsCharacteristics goods);
-        void AddGoods(IGoodsCharacteristics goods);
-        void RemoveGoods(IGoodsCharacteristics goods);
+        bool CanStore(IGoods goods);
+        void AddGoods(IGoods goods);
+        void RemoveGoods(IGoods goods);
     }
 }
