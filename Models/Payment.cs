@@ -11,5 +11,6 @@ namespace warehouse_operations_accounting_program.Models
         public decimal Amount { get; set; }
         public DateTime Date { get; set; } = DateTime.Now;
         public PaymentStatus Status { get; set; } = PaymentStatus.Pending;
+        public bool IsCashless { get; set; }
     }
 }
