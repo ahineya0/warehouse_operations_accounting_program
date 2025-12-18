@@ -17,7 +17,7 @@ namespace warehouse_operations_accounting_program.Models
         public Payment Payment { get; set; }
         public bool IsActive() => DateTime.Now <= EndDate;
         public bool IsPaid() => Payment.Status == PaymentStatus.Paid;
-        public bool CanAcceptGoods(IGoodsInformation goods)
+        public bool CanAcceptGoods(IGoods goods)
         {
             return Warehouse.Type.Contains(goods.RequiredStorageType);
         }
