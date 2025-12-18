@@ -8,7 +8,6 @@ namespace warehouse_operations_accounting_program.Models
     public abstract class Contractor : IContractor
     {
         protected readonly List<IContract> contracts = new();
-
         public string Name { get; set; }
         public string ContactInfo { get; set; }
         public IReadOnlyList<IContract> Contracts => contracts;
@@ -21,7 +20,7 @@ namespace warehouse_operations_accounting_program.Models
             ContactInfo = contact;
         }
 
-        public void AddContract(Contract contract) => contracts.Add(contract);
+        public void AddContract(IContract contract) => contracts.Add(contract);
 
         IPricingService service { get; set; }
         public decimal CalculateTotalDebt() => contracts.Where(c => c.IsActive() && !c.IsPaid()).Sum(c => service.CalculateTotalCost(c));
