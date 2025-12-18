@@ -13,5 +13,6 @@ namespace warehouse_operations_accounting_program.Interfaces
         DateTime EndDate { get; set; }
         bool IsActive();
         bool IsPaid();
+        bool CanAcceptGoods(IGoodsInformation goods);
     }
 }
