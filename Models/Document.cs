@@ -7,6 +7,7 @@ namespace warehouse_operations_accounting_program.Models
 {
     public abstract class Document : IDocument
     {
+        public string OperatorName { get; }
         public IWarehouse Warehouse { get; }
         protected readonly List<IGoodsInformation> goods = new();
         public DateTime Date { get; }
@@ -14,8 +15,9 @@ namespace warehouse_operations_accounting_program.Models
 
         public IReadOnlyList<IGoodsInformation> Goods => goods;
 
-        protected Document(IWarehouse warehouse, DateTime date, IContractor owner)
+        protected Document(string operatorName, IWarehouse warehouse, DateTime date, IContractor owner)
         {
+            OperatorName = operatorName;
             Warehouse = warehouse;
             Date = date;
             Owner = owner;
