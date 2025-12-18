@@ -7,8 +7,11 @@ namespace warehouse_operations_accounting_program.Interfaces
 {
     public interface IContract
     {
+        int RentedUnits { get; set; }
+        decimal RatePerDay { get; set; }
+        DateTime StartDate { get; set; }
+        DateTime EndDate { get; set; }
         bool IsActive();
         bool IsPaid();
-        decimal CalculateTotalCost();
     }
 }

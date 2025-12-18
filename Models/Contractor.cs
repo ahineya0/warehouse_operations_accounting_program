@@ -23,6 +23,7 @@ namespace warehouse_operations_accounting_program.Models
 
         public void AddContract(Contract contract) => contracts.Add(contract);
 
-        public decimal CalculateTotalDebt() => contracts.Where(c => c.IsActive() && !c.IsPaid()).Sum(c => c.CalculateTotalCost());
+        IPricingService service { get; set; }
+        public decimal CalculateTotalDebt() => contracts.Where(c => c.IsActive() && !c.IsPaid()).Sum(c => service.CalculateTotalCost(c));
     }
 }
