@@ -12,6 +12,5 @@ namespace warehouse_operations_accounting_program.Models
         {
             PassportData = passport;
         }
-        public override string GetContractorType() => "Физическое лицо";
     }
 }

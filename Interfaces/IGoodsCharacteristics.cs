@@ -4,7 +4,7 @@ using System.Text;
 
 namespace warehouse_operations_accounting_program.Interfaces
 {
-    public interface IGoods
+    public interface IGoodsCharacteristics
     {
         decimal TotalArea();
         decimal TotalVolume();

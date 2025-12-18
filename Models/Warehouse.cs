@@ -22,7 +22,7 @@ namespace warehouse_operations_accounting_program.Models
         }
         public decimal FreeAreaCapacity() => StorageUnits.Sum(s => s.FreeAreaCapacity());
         public decimal FreeVolumeCapacity() => StorageUnits.Sum(s => s.FreeVolumeCapacity());
-        public bool TryStoreGoods(IGoods goods)
+        public bool TryStoreGoods(IGoodsCharacteristics goods)
         {
             var unit = StorageUnits.FirstOrDefault(u => u.CanStore(goods));
             if (unit == null) return false;
