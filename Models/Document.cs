@@ -7,19 +7,18 @@ namespace warehouse_operations_accounting_program.Models
 {
     public abstract class Document : IDocument
     {
-        protected readonly List<Goods> goods = new();
-
+        public IWarehouse Warehouse { get; }
+        protected readonly List<IGoodsInformation> goods = new();
         public DateTime Date { get; }
         public IContractor Owner { get; }
 
-        public IReadOnlyList<Goods> Goods => goods;
+        public IReadOnlyList<IGoodsInformation> Goods => goods;
 
-        protected Document(DateTime date, IContractor owner)
+        protected Document(IWarehouse warehouse, DateTime date, IContractor owner)
         {
+            Warehouse = warehouse;
             Date = date;
             Owner = owner;
         }
-
-        public int GetTotalQuantity() => goods.Sum(g => g.Quantity);
     }
 }

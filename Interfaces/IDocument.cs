@@ -7,10 +7,9 @@ namespace warehouse_operations_accounting_program.Interfaces
 {
     public interface IDocument
     {
+        IWarehouse Warehouse { get; }
         DateTime Date { get; }
         IContractor Owner { get; }
-        IReadOnlyList<Goods> Goods { get; }
-
-        int GetTotalQuantity();
+        IReadOnlyList<IGoodsInformation> Goods { get; }
     }
 }
