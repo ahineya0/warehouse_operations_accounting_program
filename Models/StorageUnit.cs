@@ -1,10 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using warehouse_operations_accounting_program.Interfaces;
 
 namespace warehouse_operations_accounting_program.Models
 {
-    public abstract class StorageUnit
+    public abstract class StorageUnit : IStorageUnit
     {
         protected readonly List<Goods> goods = new();
         public int Id { get; set; }
@@ -17,6 +18,10 @@ namespace warehouse_operations_accounting_program.Models
         {
             if (!CanStore(goods)) throw new InvalidOperationException("Недостаточно места");
             this.goods.Add(goods);
+        }
+        public void RemoveGoods(Goods goods)
+        {
+            this.goods.Remove(goods);
         }
     }
 }
