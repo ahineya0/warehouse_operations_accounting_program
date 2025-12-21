@@ -21,3 +21,4 @@ D:\Visual Studio repos\warehouse operations accounting program\obj\Debug\net10.0
 D:\Visual Studio repos\warehouse operations accounting program\obj\Debug\net10.0-windows\warehouse operations accounting program.pdb
 D:\Visual Studio repos\warehouse operations accounting program\obj\Debug\net10.0-windows\warehouse operations accounting program.genruntimeconfig.cache
 D:\Visual Studio repos\warehouse operations accounting program\obj\Debug\net10.0-windows\ref\warehouse operations accounting program.dll
+D:\Visual Studio repos\warehouse operations accounting program\obj\Debug\net10.0-windows\warehouse_operations_accounting_program.View.ContractManagementForm.resources
