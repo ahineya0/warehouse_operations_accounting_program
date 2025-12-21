@@ -7,6 +7,7 @@ namespace warehouse_operations_accounting_program.Interfaces
 {
     public interface IStorageUnit
     {
+        IReadOnlyCollection<IGoods> Goods { get; }
         decimal FreeAreaCapacity();
         decimal FreeVolumeCapacity();
         bool CanStore(IGoods goods);
