@@ -9,6 +9,10 @@ namespace warehouse_operations_accounting_program.Services
     public class WarehouseService : IWarehouseService
     {
         private readonly List<Warehouse> warehouses = new();
+        public WarehouseService(List<Warehouse> loadedWarehouses)
+        {
+            warehouses = loadedWarehouses ?? new List<Warehouse>();
+        }
 
         public IEnumerable<Warehouse> GetAll()
         {
