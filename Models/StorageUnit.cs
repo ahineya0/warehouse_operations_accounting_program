@@ -8,7 +8,7 @@ namespace warehouse_operations_accounting_program.Models
     public class StorageUnit : IStorageUnit
     {
         protected readonly List<IGoods> goods = new();
-        public IReadOnlyCollection<IGoods> Goods => goods.AsReadOnly();
+        public IReadOnlyCollection<IGoods> GetGoods() => goods;
         public int Id { get; set; }
         public decimal AreaCapacity { get; set; }
         public decimal VolumeCapacity { get; set; }
