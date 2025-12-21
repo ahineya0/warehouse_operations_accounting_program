@@ -13,7 +13,7 @@ namespace warehouse_operations_accounting_program.Models
         public decimal AreaPerUnit { get; set; }
         public decimal VolumePerUnit { get; set; }
 
-        Goods(string name, WarehouseType requiredStorageType, int quantity, decimal areaPerUnit, decimal volumePerUnit)
+        public Goods(string name, WarehouseType requiredStorageType, int quantity, decimal areaPerUnit, decimal volumePerUnit)
         {
             Name = name;
             RequiredStorageType = requiredStorageType;

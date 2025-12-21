@@ -21,12 +21,16 @@ namespace warehouse_operations_accounting_program.Services
                 throw new ArgumentException("Название склада не задано");
 
             var warehouse = new Warehouse(name, types, address);
-            warehouse.StorageUnits.AddRange(storageUnits);
-
+            int currentId = 1;
+            foreach (var unit in storageUnits)
+            {
+                unit.Id = currentId++;
+                warehouse.StorageUnits.Add(unit);
+            }
             warehouses.Add(warehouse);
         }
 
-        public void AcceptGoods(Warehouse warehouse, Goods goods)
+        public void AcceptGoods(Warehouse warehouse, IGoods goods)
         {
             if (warehouse == null)
                 throw new ArgumentNullException(nameof(warehouse));
@@ -38,7 +42,7 @@ namespace warehouse_operations_accounting_program.Services
                 throw new InvalidOperationException("Недостаточно места на складе");
         }
 
-        public void ReleaseGoods(Warehouse warehouse, Goods goods)
+        public void ReleaseGoods(Warehouse warehouse, IGoods goods)
         {
             if (warehouse == null)
                 throw new ArgumentNullException(nameof(warehouse));

@@ -22,11 +22,17 @@ namespace warehouse_operations_accounting_program.Presenter
             view.ShowWarehouses(service.GetAll());
         }
 
-        public void Accept()
+        public void AcceptGoods()
         {
+            if (view.SelectedWarehouse == null)
+            {
+                view.ShowError("Выберите склад");
+                return;
+            }
             try
             {
                 service.AcceptGoods(view.SelectedWarehouse, view.GoodsData);
+                view.ShowSuccess("ТМЦ приняты");
             }
             catch (Exception ex)
             {

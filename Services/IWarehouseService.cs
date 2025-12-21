@@ -10,15 +10,10 @@ namespace warehouse_operations_accounting_program.Services
     {
         IEnumerable<Warehouse> GetAll();
 
-        void CreateWarehouse(
-            string name,
-            List<WarehouseType> types,
-            string address,
-            IEnumerable<IStorageUnit> storageUnits
-        );
+        void CreateWarehouse(string name, List<WarehouseType> types, string address, IEnumerable<IStorageUnit> storageUnits);
 
-        void AcceptGoods(Warehouse warehouse, Goods goods);
+        void AcceptGoods(Warehouse warehouse, IGoods goods);
 
-        void ReleaseGoods(Warehouse warehouse, Goods goods);
+        void ReleaseGoods(Warehouse warehouse, IGoods goods);
     }
 }

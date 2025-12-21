@@ -15,7 +15,7 @@ namespace warehouse_operations_accounting_program.Models
         public decimal OccupiedArea { get; }
         public decimal OccupiedVolume { get; }
         protected StorageUnit() { }
-        protected StorageUnit(int id, decimal areaCapacity, decimal volumeCapacity) 
+        public StorageUnit(int id, decimal areaCapacity, decimal volumeCapacity) 
         { 
             Id = id;
             AreaCapacity = areaCapacity;

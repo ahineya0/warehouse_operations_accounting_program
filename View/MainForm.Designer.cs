@@ -30,6 +30,7 @@
         {
             operatorPanel = new Panel();
             contentPanel = new Panel();
+            btnWarehouses = new Button();
             btnOutgoingGoods = new Button();
             btnIncomingGoods = new Button();
             contentPanel.SuspendLayout();
@@ -39,45 +40,59 @@
             // 
             operatorPanel.Location = new Point(4, 3);
             operatorPanel.Name = "operatorPanel";
-            operatorPanel.Size = new Size(595, 178);
+            operatorPanel.Size = new Size(1240, 649);
             operatorPanel.TabIndex = 0;
             // 
             // contentPanel
             // 
+            contentPanel.Controls.Add(btnWarehouses);
             contentPanel.Controls.Add(btnOutgoingGoods);
             contentPanel.Controls.Add(btnIncomingGoods);
-            contentPanel.Location = new Point(4, 187);
+            contentPanel.Location = new Point(4, 3);
             contentPanel.Name = "contentPanel";
-            contentPanel.Size = new Size(595, 251);
+            contentPanel.Size = new Size(1240, 649);
             contentPanel.TabIndex = 1;
+            // 
+            // btnWarehouses
+            // 
+            btnWarehouses.Location = new Point(19, 546);
+            btnWarehouses.Name = "btnWarehouses";
+            btnWarehouses.Size = new Size(183, 23);
+            btnWarehouses.TabIndex = 2;
+            btnWarehouses.Text = "Управление складами";
+            btnWarehouses.UseVisualStyleBackColor = true;
+            btnWarehouses.Click += btnWarehouses_Click;
             // 
             // btnOutgoingGoods
             // 
-            btnOutgoingGoods.Location = new Point(19, 205);
+            btnOutgoingGoods.Location = new Point(20, 604);
             btnOutgoingGoods.Name = "btnOutgoingGoods";
-            btnOutgoingGoods.Size = new Size(75, 23);
+            btnOutgoingGoods.Size = new Size(136, 23);
             btnOutgoingGoods.TabIndex = 1;
-            btnOutgoingGoods.Text = "Расход";
+            btnOutgoingGoods.Text = "Отпуск ТМЦ";
             btnOutgoingGoods.UseVisualStyleBackColor = true;
+            btnOutgoingGoods.Click += btnOutgoing_Click;
             // 
             // btnIncomingGoods
             // 
-            btnIncomingGoods.Location = new Point(19, 176);
+            btnIncomingGoods.Location = new Point(20, 575);
             btnIncomingGoods.Name = "btnIncomingGoods";
-            btnIncomingGoods.Size = new Size(75, 23);
+            btnIncomingGoods.Size = new Size(136, 23);
             btnIncomingGoods.TabIndex = 0;
-            btnIncomingGoods.Text = "Приход";
+            btnIncomingGoods.Text = "Приём ТМЦ";
             btnIncomingGoods.UseVisualStyleBackColor = true;
+            btnIncomingGoods.Click += btnIncoming_Click;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(1247, 654);
             Controls.Add(contentPanel);
             Controls.Add(operatorPanel);
             Name = "MainForm";
             Text = "MainForm";
+            FormClosed += MainForm_FormClosed;
             contentPanel.ResumeLayout(false);
             ResumeLayout(false);
         }
@@ -88,5 +103,6 @@
         private Panel contentPanel;
         private Button btnOutgoingGoods;
         private Button btnIncomingGoods;
+        private Button btnWarehouses;
     }
 }

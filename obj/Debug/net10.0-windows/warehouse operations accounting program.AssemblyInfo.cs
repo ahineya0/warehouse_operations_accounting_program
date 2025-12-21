@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("warehouse operations accounting program")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4eb80e6c49d4c86267bbb9cc4b4a9fa0a194a0bb")]
 [assembly: System.Reflection.AssemblyProductAttribute("warehouse operations accounting program")]
 [assembly: System.Reflection.AssemblyTitleAttribute("warehouse operations accounting program")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
