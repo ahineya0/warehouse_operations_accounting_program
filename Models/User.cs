@@ -8,7 +8,6 @@ namespace warehouse_operations_accounting_program.Models
     {
         Operator,
         Manager,
-        Accountant,
         Client,
         Administrator
     }

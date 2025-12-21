@@ -12,7 +12,6 @@ namespace warehouse_operations_accounting_program.Services
             new User { Username = "operator", Password = "123", Role = UserRole.Operator },
             new User { Username = "admin", Password = "123", Role = UserRole.Administrator },
             new User { Username = "manager", Password = "123", Role = UserRole.Manager },
-            new User { Username = "accountant", Password = "123", Role = UserRole.Accountant },
             new User { Username = "client", Password = "123", Role = UserRole.Client },
         };
 

@@ -13,18 +13,23 @@ namespace warehouse_operations_accounting_program.Presenter
         private readonly IMainView view;
         private readonly User user;
         private readonly IWarehouseService warehouseService;
+        private readonly IClientService clientService;
+        private readonly IContractService contractService;
 
-        public MainPresenter(IMainView view, User user, IWarehouseService warehouseService)
+        public MainPresenter(IMainView view, User user, IWarehouseService warehouseService, IClientService clientService, IContractService contractService)
         {
             this.view = view;
             this.user = user;
             this.warehouseService = warehouseService;
+            this.clientService = clientService;
         }
 
         public void Initialize()
         {
             if (user.Role == UserRole.Operator)
                 view.ShowOperatorMenu();
+            if (user.Role == UserRole.Manager)
+                view.ShowManagerMenu();
         }
         public void OpenWarehouseManagement()
         {
@@ -39,6 +44,14 @@ namespace warehouse_operations_accounting_program.Presenter
         public void OpenOutgoing()
         {
             view.ShowAsWingow(new OutgoingInvoiceForm(warehouseService));
+        }
+        public void OpenClientManagement()
+        {
+            view.ShowAsWingow(new ClientManagementForm(clientService));
+        }
+        public void OpenContractManagement()
+        {
+            view.ShowAsWingow(new ContractManagementForm(contractService));
         }
     }
 }

@@ -1,24 +1,218 @@
 {
-  "Warehouses": [
-    {
-      "Name": "\u041D\u043E\u0432\u044B\u0439 \u0441\u043A\u043B\u0430\u0434",
-      "Type": "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u044B\u0439",
-      "Address": "\u0410\u0434\u0440\u0435\u0441",
-      "StorageUnits": []
-    },
-    {
-      "Name": "\u041D\u043E\u0432\u044B\u0439 \u0441\u043A\u043B\u0430\u0434",
-      "Type": "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u044B\u0439",
-      "Address": "\u0410\u0434\u0440\u0435\u0441",
-      "StorageUnits": []
-    },
-    {
-      "Name": "\u041D\u043E\u0432\u044B\u0439 \u0441\u043A\u043B\u0430\u0434",
-      "Type": "\u0423\u043D\u0438\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u044B\u0439",
-      "Address": "\u0410\u0434\u0440\u0435\u0441",
-      "StorageUnits": []
-    }
-  ],
-  "Contractors": [],
-  "Contracts": []
+  "$id": "1",
+  "Warehouses": {
+    "$id": "2",
+    "$values": [
+      {
+        "$id": "3",
+        "Name": "Cin",
+        "Type": {
+          "$id": "4",
+          "$values": [
+            0
+          ]
+        },
+        "Address": "Zin",
+        "StorageUnits": {
+          "$id": "5",
+          "$values": [
+            {
+              "$id": "6",
+              "$type": "base",
+              "Id": 1,
+              "AreaCapacity": 10,
+              "VolumeCapacity": 10,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "7",
+              "$type": "base",
+              "Id": 2,
+              "AreaCapacity": 10,
+              "VolumeCapacity": 10,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "8",
+              "$type": "base",
+              "Id": 3,
+              "AreaCapacity": 10,
+              "VolumeCapacity": 10,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "9",
+              "$type": "base",
+              "Id": 4,
+              "AreaCapacity": 10,
+              "VolumeCapacity": 10,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "10",
+              "$type": "base",
+              "Id": 5,
+              "AreaCapacity": 10,
+              "VolumeCapacity": 10,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "11",
+              "$type": "base",
+              "Id": 6,
+              "AreaCapacity": 10,
+              "VolumeCapacity": 10,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "12",
+              "$type": "base",
+              "Id": 7,
+              "AreaCapacity": 10,
+              "VolumeCapacity": 10,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "13",
+              "$type": "base",
+              "Id": 8,
+              "AreaCapacity": 10,
+              "VolumeCapacity": 10,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "14",
+              "$type": "base",
+              "Id": 9,
+              "AreaCapacity": 10,
+              "VolumeCapacity": 10,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "15",
+              "$type": "base",
+              "Id": 10,
+              "AreaCapacity": 10,
+              "VolumeCapacity": 10,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "Contractors": {
+    "$id": "16",
+    "$values": [
+      {
+        "$id": "17",
+        "$type": "person",
+        "PassportData": "Afto",
+        "Name": "CLient",
+        "ContactInfo": "DAta",
+        "Contracts": {
+          "$id": "18",
+          "$values": []
+        }
+      },
+      {
+        "$id": "19",
+        "$type": "person",
+        "PassportData": "Afto",
+        "Name": "CLient",
+        "ContactInfo": "DAta",
+        "Contracts": {
+          "$id": "20",
+          "$values": []
+        }
+      },
+      {
+        "$id": "21",
+        "$type": "company",
+        "INN": "Chiki",
+        "KPP": "Berrt",
+        "Name": "CLient",
+        "ContactInfo": "DAta",
+        "Contracts": {
+          "$id": "22",
+          "$values": []
+        }
+      },
+      {
+        "$id": "23",
+        "$type": "company",
+        "INN": "1",
+        "KPP": "1",
+        "Name": "1",
+        "ContactInfo": "1",
+        "Contracts": {
+          "$id": "24",
+          "$values": []
+        }
+      },
+      {
+        "$id": "25",
+        "$type": "company",
+        "INN": "1",
+        "KPP": "1",
+        "Name": "1",
+        "ContactInfo": "1",
+        "Contracts": {
+          "$id": "26",
+          "$values": []
+        }
+      },
+      {
+        "$id": "27",
+        "$type": "person",
+        "PassportData": "1",
+        "Name": "1",
+        "ContactInfo": "1",
+        "Contracts": {
+          "$id": "28",
+          "$values": []
+        }
+      },
+      {
+        "$id": "29",
+        "$type": "person",
+        "PassportData": "1",
+        "Name": "1",
+        "ContactInfo": "1",
+        "Contracts": {
+          "$id": "30",
+          "$values": []
+        }
+      },
+      {
+        "$id": "31",
+        "$type": "person",
+        "PassportData": "2",
+        "Name": "2",
+        "ContactInfo": "2",
+        "Contracts": {
+          "$id": "32",
+          "$values": []
+        }
+      }
+    ]
+  },
+  "Contracts": {
+    "$id": "33",
+    "$values": []
+  },
+  "Documents": {
+    "$id": "34",
+    "$values": []
+  }
 }

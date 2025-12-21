@@ -29,35 +29,35 @@
         private void InitializeComponent()
         {
             operatorPanel = new Panel();
-            contentPanel = new Panel();
             btnWarehouses = new Button();
             btnOutgoingGoods = new Button();
             btnIncomingGoods = new Button();
-            contentPanel.SuspendLayout();
+            managerPanel = new Panel();
+            btnContracts = new Button();
+            btnClients = new Button();
+            clientPanel = new Panel();
+            accountantPanel = new Panel();
+            adminPanel = new Panel();
+            operatorPanel.SuspendLayout();
+            managerPanel.SuspendLayout();
             SuspendLayout();
             // 
             // operatorPanel
             // 
-            operatorPanel.Location = new Point(4, 3);
+            operatorPanel.Controls.Add(btnWarehouses);
+            operatorPanel.Controls.Add(btnOutgoingGoods);
+            operatorPanel.Controls.Add(btnIncomingGoods);
+            operatorPanel.Location = new Point(446, 28);
             operatorPanel.Name = "operatorPanel";
-            operatorPanel.Size = new Size(1240, 649);
+            operatorPanel.Size = new Size(402, 212);
             operatorPanel.TabIndex = 0;
-            // 
-            // contentPanel
-            // 
-            contentPanel.Controls.Add(btnWarehouses);
-            contentPanel.Controls.Add(btnOutgoingGoods);
-            contentPanel.Controls.Add(btnIncomingGoods);
-            contentPanel.Location = new Point(4, 3);
-            contentPanel.Name = "contentPanel";
-            contentPanel.Size = new Size(1240, 649);
-            contentPanel.TabIndex = 1;
+            operatorPanel.Visible = false;
             // 
             // btnWarehouses
             // 
-            btnWarehouses.Location = new Point(19, 546);
+            btnWarehouses.Location = new Point(23, 20);
             btnWarehouses.Name = "btnWarehouses";
-            btnWarehouses.Size = new Size(183, 23);
+            btnWarehouses.Size = new Size(183, 43);
             btnWarehouses.TabIndex = 2;
             btnWarehouses.Text = "Управление складами";
             btnWarehouses.UseVisualStyleBackColor = true;
@@ -65,9 +65,9 @@
             // 
             // btnOutgoingGoods
             // 
-            btnOutgoingGoods.Location = new Point(20, 604);
+            btnOutgoingGoods.Location = new Point(22, 146);
             btnOutgoingGoods.Name = "btnOutgoingGoods";
-            btnOutgoingGoods.Size = new Size(136, 23);
+            btnOutgoingGoods.Size = new Size(92, 39);
             btnOutgoingGoods.TabIndex = 1;
             btnOutgoingGoods.Text = "Отпуск ТМЦ";
             btnOutgoingGoods.UseVisualStyleBackColor = true;
@@ -75,34 +75,97 @@
             // 
             // btnIncomingGoods
             // 
-            btnIncomingGoods.Location = new Point(20, 575);
+            btnIncomingGoods.Location = new Point(23, 86);
             btnIncomingGoods.Name = "btnIncomingGoods";
-            btnIncomingGoods.Size = new Size(136, 23);
+            btnIncomingGoods.Size = new Size(93, 38);
             btnIncomingGoods.TabIndex = 0;
             btnIncomingGoods.Text = "Приём ТМЦ";
             btnIncomingGoods.UseVisualStyleBackColor = true;
             btnIncomingGoods.Click += btnIncoming_Click;
             // 
+            // managerPanel
+            // 
+            managerPanel.Controls.Add(btnContracts);
+            managerPanel.Controls.Add(btnClients);
+            managerPanel.Location = new Point(12, 28);
+            managerPanel.Name = "managerPanel";
+            managerPanel.Size = new Size(405, 212);
+            managerPanel.TabIndex = 1;
+            managerPanel.Visible = false;
+            // 
+            // btnContracts
+            // 
+            btnContracts.Location = new Point(17, 86);
+            btnContracts.Name = "btnContracts";
+            btnContracts.Size = new Size(107, 50);
+            btnContracts.TabIndex = 1;
+            btnContracts.Text = "Работа с договорами";
+            btnContracts.UseVisualStyleBackColor = true;
+            btnContracts.Click += btnContracts_Click;
+            // 
+            // btnClients
+            // 
+            btnClients.Location = new Point(17, 20);
+            btnClients.Name = "btnClients";
+            btnClients.Size = new Size(107, 49);
+            btnClients.TabIndex = 0;
+            btnClients.Text = "Работа с клиентами";
+            btnClients.UseVisualStyleBackColor = true;
+            btnClients.Click += btnClients_Click;
+            // 
+            // clientPanel
+            // 
+            clientPanel.Location = new Point(209, 338);
+            clientPanel.Name = "clientPanel";
+            clientPanel.Size = new Size(200, 100);
+            clientPanel.TabIndex = 2;
+            clientPanel.Visible = false;
+            // 
+            // accountantPanel
+            // 
+            accountantPanel.Location = new Point(498, 351);
+            accountantPanel.Name = "accountantPanel";
+            accountantPanel.Size = new Size(200, 100);
+            accountantPanel.TabIndex = 3;
+            accountantPanel.Visible = false;
+            // 
+            // adminPanel
+            // 
+            adminPanel.Location = new Point(757, 355);
+            adminPanel.Name = "adminPanel";
+            adminPanel.Size = new Size(200, 100);
+            adminPanel.TabIndex = 4;
+            adminPanel.Visible = false;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1247, 654);
-            Controls.Add(contentPanel);
+            ClientSize = new Size(1057, 626);
+            Controls.Add(adminPanel);
+            Controls.Add(accountantPanel);
+            Controls.Add(clientPanel);
             Controls.Add(operatorPanel);
+            Controls.Add(managerPanel);
             Name = "MainForm";
             Text = "MainForm";
             FormClosed += MainForm_FormClosed;
-            contentPanel.ResumeLayout(false);
+            operatorPanel.ResumeLayout(false);
+            managerPanel.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
         private Panel operatorPanel;
-        private Panel contentPanel;
+        private Panel managerPanel;
         private Button btnOutgoingGoods;
         private Button btnIncomingGoods;
         private Button btnWarehouses;
+        private Button btnClients;
+        private Button btnContracts;
+        private Panel clientPanel;
+        private Panel accountantPanel;
+        private Panel adminPanel;
     }
 }

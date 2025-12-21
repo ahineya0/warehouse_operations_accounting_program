@@ -18,6 +18,7 @@ namespace warehouse_operations_accounting_program.View
         private readonly IStateStorage storage;
         private readonly WarehouseSystemState state;
         private readonly IWarehouseService warehouseService;
+        private readonly IClientService clientService;
 
         public MainForm(User user)
         {
@@ -27,7 +28,8 @@ namespace warehouse_operations_accounting_program.View
             state = storage.Load();
 
             warehouseService = new WarehouseService(state.Warehouses);
-            presenter = new MainPresenter(this, user, warehouseService);
+            clientService = new ClientService(state.Contractors);
+            presenter = new MainPresenter(this, user, warehouseService, clientService);
 
             presenter.Initialize();
         }
@@ -35,6 +37,21 @@ namespace warehouse_operations_accounting_program.View
         public void ShowOperatorMenu()
         {
             operatorPanel.Visible = true;
+        }
+
+        public void ShowManagerMenu()
+        {
+           managerPanel.Visible = true;
+        }
+
+        public void ShowClientMenu()
+        {
+            clientPanel.Visible = true;
+        }
+
+        public void ShowAdministratorMenu()
+        {
+            adminPanel.Visible = true;
         }
 
         public void ShowAsWingow(Form form)
@@ -56,6 +73,15 @@ namespace warehouse_operations_accounting_program.View
         {
             presenter.OpenOutgoing();
         }
+        private void btnClients_Click(object sender, EventArgs e)
+        {
+            presenter.OpenClientManagement();
+        }
+        private void btnContracts_Click(object sender, EventArgs e)
+        {
+            presenter.OpenContractManagement();
+        }
+
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             storage.Save(state);
