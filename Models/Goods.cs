@@ -5,7 +5,7 @@ using warehouse_operations_accounting_program.Interfaces;
 
 namespace warehouse_operations_accounting_program.Models
 {
-    public class Goods : IGoods, IGoodsInformation
+    public class Goods : IGoods
     {
         public string Name { get; set; }
         public WarehouseType RequiredStorageType { get; set; }

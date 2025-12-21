@@ -13,7 +13,7 @@ namespace warehouse_operations_accounting_program.Models
         protected readonly List<IGoods> goods = new();
         public DateTime Date { get; }
 
-        public IReadOnlyList<IGoodsInformation> Goods => goods;
+        public IReadOnlyList<IGoods> Goods => goods;
 
         protected Document(string operatorName, IContract contract, DateTime date)
         {
