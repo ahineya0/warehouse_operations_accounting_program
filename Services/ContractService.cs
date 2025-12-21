@@ -6,7 +6,7 @@ using warehouse_operations_accounting_program.Models;
 
 namespace warehouse_operations_accounting_program.Services
 {
-    public class ContractService
+    public class ContractService : IContractService
     {
         private readonly List<Contract> contracts = new();
         public ContractService(List<Contract> loadedContracts)

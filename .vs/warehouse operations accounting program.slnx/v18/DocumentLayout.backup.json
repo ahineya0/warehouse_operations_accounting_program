@@ -3,6 +3,42 @@
   "WorkspaceRootPath": "D:\\Visual Studio repos\\warehouse operations accounting program\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|d:\\visual studio repos\\warehouse operations accounting program\\services\\contractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|solutionrelative:services\\contractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|d:\\visual studio repos\\warehouse operations accounting program\\services\\icontractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|solutionrelative:services\\icontractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|d:\\visual studio repos\\warehouse operations accounting program\\services\\iclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|solutionrelative:services\\iclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|d:\\visual studio repos\\warehouse operations accounting program\\presenter\\mainpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|solutionrelative:presenter\\mainpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|D:\\Visual Studio repos\\warehouse operations accounting program\\view\\clientmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|solutionrelative:view\\clientmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|d:\\visual studio repos\\warehouse operations accounting program\\view\\contractmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|solutionrelative:view\\contractmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|D:\\Visual Studio repos\\warehouse operations accounting program\\view\\warehousemanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|solutionrelative:view\\warehousemanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|d:\\visual studio repos\\warehouse operations accounting program\\view\\warehousemanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|solutionrelative:view\\warehousemanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|d:\\visual studio repos\\warehouse operations accounting program\\presenter\\incominginvoicepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|solutionrelative:presenter\\incominginvoicepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|d:\\visual studio repos\\warehouse operations accounting program\\models\\contract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|solutionrelative:models\\contract.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -55,36 +91,8 @@
       "RelativeMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|solutionrelative:models\\jsonstatestorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|d:\\visual studio repos\\warehouse operations accounting program\\services\\contractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|solutionrelative:services\\contractservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|d:\\visual studio repos\\warehouse operations accounting program\\presenter\\mainpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|solutionrelative:presenter\\mainpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|d:\\visual studio repos\\warehouse operations accounting program\\view\\warehousemanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|solutionrelative:view\\warehousemanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|d:\\visual studio repos\\warehouse operations accounting program\\services\\iclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|solutionrelative:services\\iclientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|D:\\Visual Studio repos\\warehouse operations accounting program\\view\\clientmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|solutionrelative:view\\clientmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|d:\\visual studio repos\\warehouse operations accounting program\\view\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|solutionrelative:view\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|d:\\visual studio repos\\warehouse operations accounting program\\presenter\\incominginvoicepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|solutionrelative:presenter\\incominginvoicepresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|D:\\Visual Studio repos\\warehouse operations accounting program\\view\\warehousemanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|solutionrelative:view\\warehousemanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C693A7CC-6F8E-4A06-2023-56866D792EDB}|warehouse operations accounting program.csproj|d:\\visual studio repos\\warehouse operations accounting program\\services\\iwarehouseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -221,111 +229,95 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "KeepingContract.cs",
-              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\KeepingContract.cs",
-              "RelativeDocumentMoniker": "Models\\KeepingContract.cs",
-              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\KeepingContract.cs",
-              "RelativeToolTip": "Models\\KeepingContract.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "IContractService.cs",
+              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Services\\IContractService.cs",
+              "RelativeDocumentMoniker": "Services\\IContractService.cs",
+              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Services\\IContractService.cs",
+              "RelativeToolTip": "Services\\IContractService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAACvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T13:47:55.857Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RentContract.cs",
-              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\RentContract.cs",
-              "RelativeDocumentMoniker": "Models\\RentContract.cs",
-              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\RentContract.cs",
-              "RelativeToolTip": "Models\\RentContract.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T13:44:36.911Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Contract.cs",
-              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\Contract.cs",
-              "RelativeDocumentMoniker": "Models\\Contract.cs",
-              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\Contract.cs*",
-              "RelativeToolTip": "Models\\Contract.cs*",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAowBwAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T04:48:52.108Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IContractor.cs",
-              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Interfaces\\IContractor.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IContractor.cs",
-              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Interfaces\\IContractor.cs",
-              "RelativeToolTip": "Interfaces\\IContractor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T04:47:40.797Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IContract.cs",
-              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Interfaces\\IContract.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IContract.cs",
-              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Interfaces\\IContract.cs*",
-              "RelativeToolTip": "Interfaces\\IContract.cs*",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T10:00:46.151Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "IOutgoingInvoiceView.cs",
-              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Interfaces\\IOutgoingInvoiceView.cs",
-              "RelativeDocumentMoniker": "Interfaces\\IOutgoingInvoiceView.cs",
-              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Interfaces\\IOutgoingInvoiceView.cs",
-              "RelativeToolTip": "Interfaces\\IOutgoingInvoiceView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T05:49:09.089Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Goods.cs",
-              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\Goods.cs",
-              "RelativeDocumentMoniker": "Models\\Goods.cs",
-              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\Goods.cs",
-              "RelativeToolTip": "Models\\Goods.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T04:41:11.612Z",
+              "WhenOpened": "2025-12-21T14:21:15.727Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "StorageUnit.cs",
-              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\StorageUnit.cs",
-              "RelativeDocumentMoniker": "Models\\StorageUnit.cs",
-              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\StorageUnit.cs",
-              "RelativeToolTip": "Models\\StorageUnit.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwAwAAAAxAAAAAAAAAA==",
+              "Title": "ContractManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\ContractManagementForm.cs",
+              "RelativeDocumentMoniker": "View\\ContractManagementForm.cs",
+              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\ContractManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "View\\ContractManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T04:53:50.939Z",
+              "WhenOpened": "2025-12-21T14:19:38.157Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ContractService.cs",
+              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Services\\ContractService.cs",
+              "RelativeDocumentMoniker": "Services\\ContractService.cs",
+              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Services\\ContractService.cs*",
+              "RelativeToolTip": "Services\\ContractService.cs*",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABIAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T13:22:44.334Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
+              "Title": "WarehouseManagementForm.cs",
+              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\WarehouseManagementForm.cs",
+              "RelativeDocumentMoniker": "View\\WarehouseManagementForm.cs",
+              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\WarehouseManagementForm.cs",
+              "RelativeToolTip": "View\\WarehouseManagementForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T05:58:13.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WarehouseManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\WarehouseManagementForm.cs",
+              "RelativeDocumentMoniker": "View\\WarehouseManagementForm.cs",
+              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\WarehouseManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "View\\WarehouseManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T05:42:46.378Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ClientManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\ClientManagementForm.cs",
+              "RelativeDocumentMoniker": "View\\ClientManagementForm.cs",
+              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\ClientManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "View\\ClientManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T12:11:23.577Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IClientService.cs",
+              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Services\\IClientService.cs",
+              "RelativeDocumentMoniker": "Services\\IClientService.cs",
+              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Services\\IClientService.cs",
+              "RelativeToolTip": "Services\\IClientService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T12:02:19.189Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "IncomingInvoice.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\IncomingInvoice.cs",
               "RelativeDocumentMoniker": "Models\\IncomingInvoice.cs",
@@ -333,12 +325,133 @@
               "RelativeToolTip": "Models\\IncomingInvoice.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T10:16:15.56Z",
+              "WhenOpened": "2025-12-18T10:16:15.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainPresenter.cs",
+              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Presenter\\MainPresenter.cs",
+              "RelativeDocumentMoniker": "Presenter\\MainPresenter.cs",
+              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Presenter\\MainPresenter.cs",
+              "RelativeToolTip": "Presenter\\MainPresenter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T05:04:05.984Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "StorageUnit.cs",
+              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\StorageUnit.cs",
+              "RelativeDocumentMoniker": "Models\\StorageUnit.cs",
+              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\StorageUnit.cs",
+              "RelativeToolTip": "Models\\StorageUnit.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwAwAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T04:53:50.939Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Goods.cs",
+              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\Goods.cs",
+              "RelativeDocumentMoniker": "Models\\Goods.cs",
+              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\Goods.cs",
+              "RelativeToolTip": "Models\\Goods.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T04:41:11.612Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IOutgoingInvoiceView.cs",
+              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Interfaces\\IOutgoingInvoiceView.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IOutgoingInvoiceView.cs",
+              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Interfaces\\IOutgoingInvoiceView.cs",
+              "RelativeToolTip": "Interfaces\\IOutgoingInvoiceView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T05:49:09.089Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IContract.cs",
+              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Interfaces\\IContract.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IContract.cs",
+              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Interfaces\\IContract.cs",
+              "RelativeToolTip": "Interfaces\\IContract.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T10:00:46.151Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "Contract.cs",
+              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\Contract.cs",
+              "RelativeDocumentMoniker": "Models\\Contract.cs",
+              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\Contract.cs",
+              "RelativeToolTip": "Models\\Contract.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAowBwAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T04:48:52.108Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RentContract.cs",
+              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\RentContract.cs",
+              "RelativeDocumentMoniker": "Models\\RentContract.cs",
+              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\RentContract.cs",
+              "RelativeToolTip": "Models\\RentContract.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T13:44:36.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IncomingInvoicePresenter.cs",
+              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Presenter\\IncomingInvoicePresenter.cs",
+              "RelativeDocumentMoniker": "Presenter\\IncomingInvoicePresenter.cs",
+              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Presenter\\IncomingInvoicePresenter.cs",
+              "RelativeToolTip": "Presenter\\IncomingInvoicePresenter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T04:51:39.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "KeepingContract.cs",
+              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\KeepingContract.cs",
+              "RelativeDocumentMoniker": "Models\\KeepingContract.cs",
+              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\KeepingContract.cs",
+              "RelativeToolTip": "Models\\KeepingContract.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-21T13:47:55.857Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IContractor.cs",
+              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Interfaces\\IContractor.cs",
+              "RelativeDocumentMoniker": "Interfaces\\IContractor.cs",
+              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Interfaces\\IContractor.cs",
+              "RelativeToolTip": "Interfaces\\IContractor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-18T04:47:40.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "Document.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\Document.cs",
               "RelativeDocumentMoniker": "Models\\Document.cs",
@@ -346,12 +459,11 @@
               "RelativeToolTip": "Models\\Document.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T05:46:34.751Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-18T05:46:34.751Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 19,
               "Title": "Contractor.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\Contractor.cs",
               "RelativeDocumentMoniker": "Models\\Contractor.cs",
@@ -359,12 +471,11 @@
               "RelativeToolTip": "Models\\Contractor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T04:47:24.527Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-18T04:47:24.527Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 20,
               "Title": "IDocument.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Interfaces\\IDocument.cs",
               "RelativeDocumentMoniker": "Interfaces\\IDocument.cs",
@@ -372,12 +483,11 @@
               "RelativeToolTip": "Interfaces\\IDocument.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T05:46:16.422Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-18T05:46:16.422Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 21,
               "Title": "JsonStateStorage.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\JsonStateStorage.cs",
               "RelativeDocumentMoniker": "Models\\JsonStateStorage.cs",
@@ -385,60 +495,11 @@
               "RelativeToolTip": "Models\\JsonStateStorage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-18T05:02:59.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-18T05:02:59.21Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "ClientManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\ClientManagementForm.cs",
-              "RelativeDocumentMoniker": "View\\ClientManagementForm.cs",
-              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\ClientManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "View\\ClientManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T12:11:23.577Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "IClientService.cs",
-              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Services\\IClientService.cs",
-              "RelativeDocumentMoniker": "Services\\IClientService.cs",
-              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Services\\IClientService.cs",
-              "RelativeToolTip": "Services\\IClientService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T12:02:19.189Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "WarehouseManagementForm.cs",
-              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\WarehouseManagementForm.cs",
-              "RelativeDocumentMoniker": "View\\WarehouseManagementForm.cs",
-              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\WarehouseManagementForm.cs",
-              "RelativeToolTip": "View\\WarehouseManagementForm.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAqwCIAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T05:58:13.557Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "MainPresenter.cs",
-              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Presenter\\MainPresenter.cs",
-              "RelativeDocumentMoniker": "Presenter\\MainPresenter.cs",
-              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Presenter\\MainPresenter.cs",
-              "RelativeToolTip": "Presenter\\MainPresenter.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAwBoAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T05:04:05.984Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "View\\MainForm.Designer.cs",
@@ -450,42 +511,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ContractService.cs",
-              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Services\\ContractService.cs",
-              "RelativeDocumentMoniker": "Services\\ContractService.cs",
-              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Services\\ContractService.cs",
-              "RelativeToolTip": "Services\\ContractService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T13:22:44.334Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "IncomingInvoicePresenter.cs",
-              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Presenter\\IncomingInvoicePresenter.cs",
-              "RelativeDocumentMoniker": "Presenter\\IncomingInvoicePresenter.cs",
-              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\Presenter\\IncomingInvoicePresenter.cs",
-              "RelativeToolTip": "Presenter\\IncomingInvoicePresenter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T04:51:39.653Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "WarehouseManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\WarehouseManagementForm.cs",
-              "RelativeDocumentMoniker": "View\\WarehouseManagementForm.cs",
-              "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\WarehouseManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "View\\WarehouseManagementForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T05:42:46.378Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "IWarehouseService.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Services\\IWarehouseService.cs",
               "RelativeDocumentMoniker": "Services\\IWarehouseService.cs",
@@ -497,7 +523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "LoginPresenter.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Presenter\\LoginPresenter.cs",
               "RelativeDocumentMoniker": "Presenter\\LoginPresenter.cs",
@@ -509,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "Individual.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\Individual.cs",
               "RelativeDocumentMoniker": "Models\\Individual.cs",
@@ -521,7 +547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "StorageUnitBatch.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Services\\StorageUnitBatch.cs",
               "RelativeDocumentMoniker": "Services\\StorageUnitBatch.cs",
@@ -533,7 +559,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "IWarehouseManagementView.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Interfaces\\IWarehouseManagementView.cs",
               "RelativeDocumentMoniker": "Interfaces\\IWarehouseManagementView.cs",
@@ -545,7 +571,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "Company.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\Company.cs",
               "RelativeDocumentMoniker": "Models\\Company.cs",
@@ -557,7 +583,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "IncomingInvoiceForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\IncomingInvoiceForm.cs",
               "RelativeDocumentMoniker": "View\\IncomingInvoiceForm.cs",
@@ -568,7 +594,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "IMainView.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Interfaces\\IMainView.cs",
               "RelativeDocumentMoniker": "Interfaces\\IMainView.cs",
@@ -580,7 +606,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "StorageUnitsSettingForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\StorageUnitsSettingForm.cs",
               "RelativeDocumentMoniker": "View\\StorageUnitsSettingForm.cs",
@@ -591,7 +617,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "OutgoingInvoiceForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\OutgoingInvoiceForm.cs",
               "RelativeDocumentMoniker": "View\\OutgoingInvoiceForm.cs",
@@ -602,7 +628,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "LoginForm.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\LoginForm.cs",
               "RelativeDocumentMoniker": "View\\LoginForm.cs",
@@ -615,7 +641,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "IStorageUnit.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Interfaces\\IStorageUnit.cs",
               "RelativeDocumentMoniker": "Interfaces\\IStorageUnit.cs",
@@ -627,7 +653,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "IWarehouse.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Interfaces\\IWarehouse.cs",
               "RelativeDocumentMoniker": "Interfaces\\IWarehouse.cs",
@@ -639,7 +665,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "CalculateTotalDebt.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Models\\CalculateTotalDebt.cs",
               "RelativeDocumentMoniker": "Models\\CalculateTotalDebt.cs",
@@ -651,7 +677,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 37,
               "Title": "IStateStorage.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Interfaces\\IStateStorage.cs",
               "RelativeDocumentMoniker": "Interfaces\\IStateStorage.cs",
@@ -663,7 +689,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 38,
               "Title": "IStorageUnitsSettingView.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Interfaces\\IStorageUnitsSettingView.cs",
               "RelativeDocumentMoniker": "Interfaces\\IStorageUnitsSettingView.cs",
@@ -675,7 +701,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 39,
               "Title": "IGoods.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Interfaces\\IGoods.cs",
               "RelativeDocumentMoniker": "Interfaces\\IGoods.cs",
@@ -687,7 +713,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 40,
               "Title": "ILoginView.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Interfaces\\ILoginView.cs",
               "RelativeDocumentMoniker": "Interfaces\\ILoginView.cs",
@@ -699,7 +725,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 41,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -711,7 +737,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 42,
               "Title": "ApplicationConfiguration.g.cs",
               "DocumentMoniker": "C:\\Users\\nothe\\AppData\\Local\\Temp\\.vsdbgsrc\\41b7e668d6ef2ffb5bb34f0d0940de400214b2c4\\ApplicationConfiguration.g.cs",
               "ToolTip": "C:\\Users\\nothe\\AppData\\Local\\Temp\\.vsdbgsrc\\41b7e668d6ef2ffb5bb34f0d0940de400214b2c4\\ApplicationConfiguration.g.cs [\u0422\u043E\u043B\u044C\u043A\u043E \u0447\u0442\u0435\u043D\u0438\u0435]",
@@ -722,7 +748,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 43,
               "Title": "WarehouseManagementForm.Designer.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\WarehouseManagementForm.Designer.cs",
               "RelativeDocumentMoniker": "View\\WarehouseManagementForm.Designer.cs",
@@ -730,11 +756,12 @@
               "RelativeToolTip": "View\\WarehouseManagementForm.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-21T09:34:44.544Z"
+              "WhenOpened": "2025-12-21T09:34:44.544Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 44,
               "Title": "StorageUnitsSettingForm.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\StorageUnitsSettingForm.cs",
               "RelativeDocumentMoniker": "View\\StorageUnitsSettingForm.cs",
@@ -746,18 +773,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 45,
               "Title": "WarehouseManagementForm.resx",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\WarehouseManagementForm.resx",
               "RelativeDocumentMoniker": "View\\WarehouseManagementForm.resx",
               "ToolTip": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\WarehouseManagementForm.resx",
               "RelativeToolTip": "View\\WarehouseManagementForm.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-12-21T09:35:37.126Z"
+              "WhenOpened": "2025-12-21T09:35:37.126Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 46,
               "Title": "IIncomingInvoiceView.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Interfaces\\IIncomingInvoiceView.cs",
               "RelativeDocumentMoniker": "Interfaces\\IIncomingInvoiceView.cs",
@@ -769,7 +797,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 47,
               "Title": "StorageUnitsSettingPresenter.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\Presenter\\StorageUnitsSettingPresenter.cs",
               "RelativeDocumentMoniker": "Presenter\\StorageUnitsSettingPresenter.cs",
@@ -781,7 +809,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 48,
               "Title": "IncomingInvoiceForm.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\IncomingInvoiceForm.cs",
               "RelativeDocumentMoniker": "View\\IncomingInvoiceForm.cs",
@@ -793,7 +821,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 49,
               "Title": "OutgoingInvoiceForm.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\OutgoingInvoiceForm.cs",
               "RelativeDocumentMoniker": "View\\OutgoingInvoiceForm.cs",
@@ -805,7 +833,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 50,
               "Title": "IncomingInvoiceForm.Designer.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\IncomingInvoiceForm.Designer.cs",
               "RelativeDocumentMoniker": "View\\IncomingInvoiceForm.Designer.cs",
@@ -817,7 +845,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 51,
               "Title": "LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\LoginForm.cs",
               "RelativeDocumentMoniker": "View\\LoginForm.cs",
@@ -828,7 +856,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 52,
               "Title": "LoginForm.Designer.cs",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\View\\LoginForm.Designer.cs",
               "RelativeDocumentMoniker": "View\\LoginForm.Designer.cs",
@@ -840,7 +868,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 53,
               "Title": "warehouse operations accounting program.csproj",
               "DocumentMoniker": "D:\\Visual Studio repos\\warehouse operations accounting program\\warehouse operations accounting program.csproj",
               "RelativeDocumentMoniker": "warehouse operations accounting program.csproj",

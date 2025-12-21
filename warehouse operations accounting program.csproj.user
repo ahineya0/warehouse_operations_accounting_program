@@ -7,6 +7,9 @@
     <Compile Update="View\ContractManagementForm.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="View\GoodsSelectionForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="View\IncomingInvoiceForm.cs">
       <SubType>Form</SubType>
     </Compile>

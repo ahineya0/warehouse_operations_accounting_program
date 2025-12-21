@@ -46,16 +46,10 @@ namespace warehouse_operations_accounting_program.View
         {
             presenter.CreateCompany();
         }
-        private void RadioButton_CheckedChanged(object sender, EventArgs e)
+        private void rb_CheckedChanged(object sender, EventArgs e)
         {
-            if (radioButtonInd.Checked)
-                panelInd.Visible = true;
-            else
-                panelInd.Visible = false;
-            if (radioButtonComp.Checked)
-                panelComp.Visible = true;
-            else 
-                panelComp.Visible = false;
+            panelInd.Visible = radioButtonInd.Checked;
+            panelComp.Visible = radioButtonComp.Checked;
         }
     }
 }

@@ -8,7 +8,8 @@ namespace warehouse_operations_accounting_program.Interfaces
 {
     public interface IWarehouse
     {
-        public List<WarehouseType> Type { get; set; }
+        string Name { get; }
+        List<WarehouseType> Type { get; set; }
         bool TryStoreGoods(IGoods goods);
     }
 }
