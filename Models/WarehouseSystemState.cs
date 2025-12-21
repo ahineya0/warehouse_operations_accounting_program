@@ -9,5 +9,6 @@ namespace warehouse_operations_accounting_program.Models
         public List<Warehouse> Warehouses { get; set; } = new();
         public List<Contractor> Contractors { get; set; } = new();
         public List<Contract> Contracts { get; set; } = new();
+        public List<Document> Documents { get; set; } = new();
     }
 }

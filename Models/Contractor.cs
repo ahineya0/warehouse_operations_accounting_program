@@ -1,10 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.Json.Serialization;
 using warehouse_operations_accounting_program.Interfaces;
 
 namespace warehouse_operations_accounting_program.Models
 {
+    [JsonDerivedType(typeof(Company), "company")]
+    [JsonDerivedType(typeof(Individual), "person")]
     public abstract class Contractor : IContractor
     {
         protected readonly List<IContract> contracts = new();

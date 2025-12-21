@@ -30,18 +30,11 @@ namespace warehouse_operations_accounting_program.View
             operatorPanel.Visible = true;
         }
 
-        public void OpenChild(Form form)
-        {
-            contentPanel.Controls.Clear();
-            form.TopLevel = false;
-            form.Dock = DockStyle.Fill;
-            contentPanel.Controls.Add(form);
-            form.Show();
-        }
         public void ShowAsWingow(Form form)
         {
             form.Show();
         }
+
         private void btnWarehouses_Click(object sender, EventArgs e)
         {
             presenter.OpenWarehouseManagement();

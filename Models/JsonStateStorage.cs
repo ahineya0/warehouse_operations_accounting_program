@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using System.Text.Json;
+using System.Text.Json.Serialization;
 using warehouse_operations_accounting_program.Interfaces;
 
 namespace warehouse_operations_accounting_program.Models
@@ -12,6 +13,8 @@ namespace warehouse_operations_accounting_program.Models
         private readonly JsonSerializerOptions options = new()
         {
             WriteIndented = true,
+            ReferenceHandler = ReferenceHandler.Preserve,
+            PropertyNameCaseInsensitive = true,
             IncludeFields = true
         };
 

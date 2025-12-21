@@ -12,7 +12,6 @@ namespace warehouse_operations_accounting_program.Presenter
     {
         private readonly IWarehouseManagementView view;
         private readonly IWarehouseService service;
-        private readonly List<IStorageUnit> _pendingUnits = new();
 
         public WarehouseManagementPresenter(IWarehouseManagementView view, IWarehouseService service)
         {
