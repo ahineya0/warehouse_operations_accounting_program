@@ -138,7 +138,7 @@
             radioButtonInd.TabIndex = 12;
             radioButtonInd.Text = "Физическое лицо";
             radioButtonInd.UseVisualStyleBackColor = true;
-            radioButtonInd.CheckedChanged += RadioButton_CheckedChanged;
+            radioButtonInd.CheckedChanged += rb_CheckedChanged;
             // 
             // radioButtonComp
             // 
@@ -149,7 +149,7 @@
             radioButtonComp.TabIndex = 13;
             radioButtonComp.Text = "Юридическое лицо";
             radioButtonComp.UseVisualStyleBackColor = true;
-            radioButtonComp.CheckedChanged += RadioButton_CheckedChanged;
+            radioButtonComp.CheckedChanged += rb_CheckedChanged;
             // 
             // ClientManagementForm
             // 

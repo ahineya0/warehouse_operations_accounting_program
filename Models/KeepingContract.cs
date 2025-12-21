@@ -23,6 +23,10 @@ namespace warehouse_operations_accounting_program.Models
             RatePerVolumePerDay = ratePerVolumePerDay;
             Goods = goods;
         }
+        public KeepingContract() : base() 
+        {
+            Goods = new List<IGoods>();
+        }
 
         public bool CanAcceptGoods(IGoods goodsItem)
         {

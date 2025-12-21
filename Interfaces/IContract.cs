@@ -6,7 +6,6 @@ using warehouse_operations_accounting_program.Models;
 
 namespace warehouse_operations_accounting_program.Interfaces
 {
-    [JsonDerivedType(typeof(Contract), typeDiscriminator: "base")]
     public interface IContract
     {
         IContractor Client { get; }

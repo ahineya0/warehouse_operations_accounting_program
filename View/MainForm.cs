@@ -19,6 +19,7 @@ namespace warehouse_operations_accounting_program.View
         private readonly WarehouseSystemState state;
         private readonly IWarehouseService warehouseService;
         private readonly IClientService clientService;
+        private readonly IContractService contractService;
 
         public MainForm(User user)
         {
@@ -29,7 +30,8 @@ namespace warehouse_operations_accounting_program.View
 
             warehouseService = new WarehouseService(state.Warehouses);
             clientService = new ClientService(state.Contractors);
-            presenter = new MainPresenter(this, user, warehouseService, clientService);
+            contractService = new ContractService(state.Contracts);
+            presenter = new MainPresenter(this, user, warehouseService, clientService, contractService);
 
             presenter.Initialize();
         }

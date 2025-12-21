@@ -12,6 +12,7 @@ namespace warehouse_operations_accounting_program.Interfaces
         DateTime StartDate { get; }
         DateTime EndDate { get; }
         decimal Rate { get; }
+        bool IsCashless { get; }
 
         int RentedUnits { get; }
         List<IGoods> SelectedGoods { get; }

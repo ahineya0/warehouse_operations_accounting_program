@@ -23,11 +23,13 @@ namespace warehouse_operations_accounting_program.View
             presenter = new ContractManagementPresenter(this, contractService, clientService, warehouseService);
             presenter.Initialize();
         }
+
         public IContractor SelectedClient => cmbClients.SelectedItem as IContractor;
         public IWarehouse SelectedWarehouse => cmbWarehouses.SelectedItem as IWarehouse;
         public DateTime StartDate => dtpStart.Value;
         public DateTime EndDate => dtpEnd.Value;
         public decimal Rate => numRate.Value;
+        public bool IsCashless => chkIsCashless.Checked;
         public int RentedUnits => (int)numUnits.Value;
         public List<IGoods> SelectedGoods => _tempGoods;
         public void ShowClients(IEnumerable<Contractor> clients)
@@ -70,7 +72,6 @@ namespace warehouse_operations_accounting_program.View
                 }
             }
         }
-
         private void btnCreateContract_Click(object sender, EventArgs e)
         {
             if (rbRent.Checked)

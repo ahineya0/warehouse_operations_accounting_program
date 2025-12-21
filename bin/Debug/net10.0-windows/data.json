@@ -1,0 +1,470 @@
+{
+  "$id": "1",
+  "Warehouses": {
+    "$id": "2",
+    "$values": [
+      {
+        "$id": "3",
+        "Name": "UNIversum",
+        "Type": {
+          "$id": "4",
+          "$values": [
+            "Construction",
+            "Refrigeration",
+            "Heating"
+          ]
+        },
+        "Address": "Lokot 56",
+        "StorageUnits": {
+          "$id": "5",
+          "$values": [
+            {
+              "$id": "6",
+              "$type": "base",
+              "Id": 1,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "7",
+              "$type": "base",
+              "Id": 2,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "8",
+              "$type": "base",
+              "Id": 3,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "9",
+              "$type": "base",
+              "Id": 4,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "10",
+              "$type": "base",
+              "Id": 5,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "11",
+              "$type": "base",
+              "Id": 6,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "12",
+              "$type": "base",
+              "Id": 7,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "13",
+              "$type": "base",
+              "Id": 8,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "14",
+              "$type": "base",
+              "Id": 9,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "15",
+              "$type": "base",
+              "Id": 10,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "16",
+              "$type": "base",
+              "Id": 11,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "17",
+              "$type": "base",
+              "Id": 12,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "18",
+              "$type": "base",
+              "Id": 13,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "19",
+              "$type": "base",
+              "Id": 14,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "20",
+              "$type": "base",
+              "Id": 15,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "21",
+              "$type": "base",
+              "Id": 16,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "22",
+              "$type": "base",
+              "Id": 17,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "23",
+              "$type": "base",
+              "Id": 18,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "24",
+              "$type": "base",
+              "Id": 19,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "25",
+              "$type": "base",
+              "Id": 20,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "26",
+              "$type": "base",
+              "Id": 21,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "27",
+              "$type": "base",
+              "Id": 22,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "28",
+              "$type": "base",
+              "Id": 23,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "29",
+              "$type": "base",
+              "Id": 24,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "30",
+              "$type": "base",
+              "Id": 25,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "31",
+              "$type": "base",
+              "Id": 26,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "32",
+              "$type": "base",
+              "Id": 27,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "33",
+              "$type": "base",
+              "Id": 28,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "34",
+              "$type": "base",
+              "Id": 29,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "35",
+              "$type": "base",
+              "Id": 30,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "36",
+              "$type": "base",
+              "Id": 31,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "37",
+              "$type": "base",
+              "Id": 32,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "38",
+              "$type": "base",
+              "Id": 33,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "39",
+              "$type": "base",
+              "Id": 34,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "40",
+              "$type": "base",
+              "Id": 35,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "41",
+              "$type": "base",
+              "Id": 36,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "42",
+              "$type": "base",
+              "Id": 37,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "43",
+              "$type": "base",
+              "Id": 38,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "44",
+              "$type": "base",
+              "Id": 39,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            },
+            {
+              "$id": "45",
+              "$type": "base",
+              "Id": 40,
+              "AreaCapacity": 20,
+              "VolumeCapacity": 60,
+              "OccupiedArea": 0,
+              "OccupiedVolume": 0
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "Contractors": {
+    "$id": "46",
+    "$values": [
+      {
+        "$id": "47",
+        "$type": "person",
+        "PassportData": "K33D3",
+        "Name": "\u041C\u043E\u0445\u043E\u0432\u0430 \u041C\u0430\u0440\u0438\u044F",
+        "ContactInfo": "\u002B79131327244",
+        "Contracts": {
+          "$id": "48",
+          "$values": []
+        }
+      },
+      {
+        "$id": "49",
+        "$type": "company",
+        "INN": "4564545645",
+        "KPP": "4564564545",
+        "Name": "\u0422\u041E\u041E KONSTSSN",
+        "ContactInfo": "\u002B999999",
+        "Contracts": {
+          "$id": "50",
+          "$values": []
+        }
+      }
+    ]
+  },
+  "Contracts": {
+    "$id": "51",
+    "$values": [
+      {
+        "$id": "52",
+        "$type": "rent",
+        "RentedUnits": 0,
+        "RatePerUnitPerDay": 0,
+        "Client": {
+          "$ref": "47"
+        },
+        "Warehouse": {
+          "$ref": "3"
+        },
+        "StartDate": "2025-12-21T23:51:29.1679326+07:00",
+        "EndDate": "2025-12-31T23:51:29.163",
+        "Payment": {
+          "$id": "53",
+          "Amount": 12600,
+          "Date": "2025-12-21T23:51:51.4746405+07:00",
+          "Status": "Pending",
+          "IsCashless": true
+        },
+        "RatePerPerDay": 100
+      },
+      {
+        "$id": "54",
+        "$type": "keeping",
+        "Goods": {
+          "$id": "55",
+          "$values": []
+        },
+        "RatePerVolumePerDay": 0,
+        "Client": {
+          "$ref": "49"
+        },
+        "Warehouse": {
+          "$ref": "3"
+        },
+        "StartDate": "2025-12-21T23:51:29.1679326+07:00",
+        "EndDate": "2025-12-31T23:51:29.163",
+        "Payment": {
+          "$id": "56",
+          "Amount": 12600,
+          "Date": "2025-12-21T23:52:36.417628+07:00",
+          "Status": "Pending",
+          "IsCashless": true
+        },
+        "RatePerPerDay": 100
+      }
+    ]
+  },
+  "Documents": {
+    "$id": "57",
+    "$values": []
+  }
+}

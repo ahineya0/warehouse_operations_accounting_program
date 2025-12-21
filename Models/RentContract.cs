@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.Json.Serialization;
 using warehouse_operations_accounting_program.Interfaces;
 
 namespace warehouse_operations_accounting_program.Models
@@ -8,6 +9,7 @@ namespace warehouse_operations_accounting_program.Models
     public class RentContract : Contract
     {
         public int RentedUnits { get; }
+
         public decimal RatePerUnitPerDay { get; }
 
         public RentContract(
@@ -22,7 +24,7 @@ namespace warehouse_operations_accounting_program.Models
         {
             RentedUnits = rentedUnits;
         }
-
+        public RentContract() : base() { }
         public override decimal CalculateCost()
         {
             var days = (EndDate - StartDate).Days;

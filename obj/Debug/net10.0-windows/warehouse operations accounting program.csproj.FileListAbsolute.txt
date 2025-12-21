@@ -1,9 +1,6 @@
-D:\Visual Studio repos\warehouse operations accounting program\bin\Debug\net10.0-windows\warehouse operations accounting program.exe
-D:\Visual Studio repos\warehouse operations accounting program\bin\Debug\net10.0-windows\warehouse operations accounting program.deps.json
-D:\Visual Studio repos\warehouse operations accounting program\bin\Debug\net10.0-windows\warehouse operations accounting program.runtimeconfig.json
-D:\Visual Studio repos\warehouse operations accounting program\bin\Debug\net10.0-windows\warehouse operations accounting program.dll
-D:\Visual Studio repos\warehouse operations accounting program\bin\Debug\net10.0-windows\warehouse operations accounting program.pdb
 D:\Visual Studio repos\warehouse operations accounting program\obj\Debug\net10.0-windows\warehouse_operations_accounting_program.View.ClientManagementForm.resources
+D:\Visual Studio repos\warehouse operations accounting program\obj\Debug\net10.0-windows\warehouse_operations_accounting_program.View.ContractManagementForm.resources
+D:\Visual Studio repos\warehouse operations accounting program\obj\Debug\net10.0-windows\warehouse_operations_accounting_program.View.GoodsSelectionForm.resources
 D:\Visual Studio repos\warehouse operations accounting program\obj\Debug\net10.0-windows\warehouse_operations_accounting_program.View.IncomingInvoiceForm.resources
 D:\Visual Studio repos\warehouse operations accounting program\obj\Debug\net10.0-windows\warehouse_operations_accounting_program.View.LoginForm.resources
 D:\Visual Studio repos\warehouse operations accounting program\obj\Debug\net10.0-windows\warehouse_operations_accounting_program.View.MainForm.resources
@@ -16,9 +13,13 @@ D:\Visual Studio repos\warehouse operations accounting program\obj\Debug\net10.0
 D:\Visual Studio repos\warehouse operations accounting program\obj\Debug\net10.0-windows\warehouse operations accounting program.AssemblyInfo.cs
 D:\Visual Studio repos\warehouse operations accounting program\obj\Debug\net10.0-windows\warehouse operations accounting program.csproj.CoreCompileInputs.cache
 D:\Visual Studio repos\warehouse operations accounting program\obj\Debug\net10.0-windows\warehouse operations accounting program.sourcelink.json
+D:\Visual Studio repos\warehouse operations accounting program\bin\Debug\net10.0-windows\warehouse operations accounting program.exe
+D:\Visual Studio repos\warehouse operations accounting program\bin\Debug\net10.0-windows\warehouse operations accounting program.deps.json
+D:\Visual Studio repos\warehouse operations accounting program\bin\Debug\net10.0-windows\warehouse operations accounting program.runtimeconfig.json
+D:\Visual Studio repos\warehouse operations accounting program\bin\Debug\net10.0-windows\warehouse operations accounting program.dll
+D:\Visual Studio repos\warehouse operations accounting program\bin\Debug\net10.0-windows\warehouse operations accounting program.pdb
 D:\Visual Studio repos\warehouse operations accounting program\obj\Debug\net10.0-windows\warehouse operations accounting program.dll
 D:\Visual Studio repos\warehouse operations accounting program\obj\Debug\net10.0-windows\refint\warehouse operations accounting program.dll
 D:\Visual Studio repos\warehouse operations accounting program\obj\Debug\net10.0-windows\warehouse operations accounting program.pdb
 D:\Visual Studio repos\warehouse operations accounting program\obj\Debug\net10.0-windows\warehouse operations accounting program.genruntimeconfig.cache
 D:\Visual Studio repos\warehouse operations accounting program\obj\Debug\net10.0-windows\ref\warehouse operations accounting program.dll
-D:\Visual Studio repos\warehouse operations accounting program\obj\Debug\net10.0-windows\warehouse_operations_accounting_program.View.ContractManagementForm.resources

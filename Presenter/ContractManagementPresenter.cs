@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 using warehouse_operations_accounting_program.Interfaces;
+using warehouse_operations_accounting_program.Models;
 using warehouse_operations_accounting_program.Services;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace warehouse_operations_accounting_program.Presenter
 {
@@ -24,13 +26,23 @@ namespace warehouse_operations_accounting_program.Presenter
         public void Initialize()
         {
             view.ShowContracts(service.GetAll());
+            view.ShowClients(clientService.GetAll());
+            view.ShowWarehouses(warehouseService.GetAll());
         }
 
         public void CreateRent()
         {
+            var days = (view.EndDate - view.StartDate).Days;
+            var totalAmount = view.RentedUnits * view.Rate * days;
+            var payment = new Payment
+            {
+                Amount = totalAmount,
+                Status = PaymentStatus.Pending,
+                IsCashless = view.IsCashless
+            };
             try
             {
-                service.CreateRentContract(view.SelectedContractor, view.SelectedWarehouse, view.StartDate, view.EndDate, view.Payment, view.Rate, view.RentedUnits);
+                service.CreateRentContract(view.SelectedClient, view.SelectedWarehouse, view.StartDate, view.EndDate, payment, view.Rate, view.RentedUnits);
                 view.ShowContracts(service.GetAll());
             }
             catch (Exception ex)
@@ -40,9 +52,17 @@ namespace warehouse_operations_accounting_program.Presenter
         }
         public void CreateKeeping()
         {
+            var days = (view.EndDate - view.StartDate).Days;
+            var totalAmount = view.RentedUnits * view.Rate * days;
+            var payment = new Payment
+            {
+                Amount = totalAmount,
+                Status = PaymentStatus.Pending,
+                IsCashless = view.IsCashless
+            };
             try
             {
-                service.CreateKeepingContract(view.SelectedContractor, view.SelectedWarehouse, view.StartDate, view.EndDate, view.Payment, view.Rate, view.SelectedGoods);
+                service.CreateKeepingContract(view.SelectedClient, view.SelectedWarehouse, view.StartDate, view.EndDate, payment, view.Rate, view.SelectedGoods);
                 view.ShowContracts(service.GetAll());
             }
             catch (Exception ex)

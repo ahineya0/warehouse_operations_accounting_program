@@ -15,7 +15,9 @@ namespace warehouse_operations_accounting_program.Models
             WriteIndented = true,
             ReferenceHandler = ReferenceHandler.Preserve,
             PropertyNameCaseInsensitive = true,
-            IncludeFields = true
+            IncludeFields = true,
+            DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
+            Converters = { new JsonStringEnumConverter() }
         };
 
         public void Save(WarehouseSystemState state)

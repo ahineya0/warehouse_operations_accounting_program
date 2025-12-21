@@ -22,6 +22,7 @@ namespace warehouse_operations_accounting_program.Presenter
             this.user = user;
             this.warehouseService = warehouseService;
             this.clientService = clientService;
+            this.contractService = contractService;
         }
 
         public void Initialize()
@@ -51,7 +52,7 @@ namespace warehouse_operations_accounting_program.Presenter
         }
         public void OpenContractManagement()
         {
-            view.ShowAsWingow(new ContractManagementForm(contractService));
+            view.ShowAsWingow(new ContractManagementForm(contractService, clientService, warehouseService));
         }
     }
 }

@@ -7,7 +7,7 @@ namespace warehouse_operations_accounting_program.Models
 {
     public enum WarehouseType { Construction, Refrigeration, Heating }
 
-    public class Warehouse
+    public class Warehouse : IWarehouse
     {
         public string Name { get; set; }
         public List<WarehouseType> Type { get; set; }

@@ -10,6 +10,7 @@ namespace warehouse_operations_accounting_program.Interfaces
     {
         string Name { get; }
         string ContactInfo { get; }
+
         IReadOnlyList<IContract> Contracts { get; }
     }
 }
