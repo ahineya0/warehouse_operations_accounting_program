@@ -24,7 +24,7 @@ namespace warehouse_operations_accounting_program.Presenter
 
         public void WarehouseChanged()
         {
-            var goods = view.SelectedWarehouse.StorageUnits.SelectMany(u => u.Goods);
+            var goods = view.SelectedWarehouse.StorageUnits.SelectMany(u => u.GetGoods());
 
             view.ShowGoods(goods);
         }

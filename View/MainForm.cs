@@ -15,13 +15,20 @@ namespace warehouse_operations_accounting_program.View
     public partial class MainForm : Form, IMainView
     {
         private MainPresenter presenter;
+        private readonly IStateStorage storage;
+        private readonly WarehouseSystemState state;
         private readonly IWarehouseService warehouseService;
 
         public MainForm(User user)
         {
             InitializeComponent();
-            warehouseService = new WarehouseService();
+
+            storage = new JsonStateStorage();
+            state = storage.Load();
+
+            warehouseService = new WarehouseService(state.Warehouses);
             presenter = new MainPresenter(this, user, warehouseService);
+
             presenter.Initialize();
         }
 
@@ -51,6 +58,7 @@ namespace warehouse_operations_accounting_program.View
         }
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
+            storage.Save(state);
             Application.Exit();
         }
     }

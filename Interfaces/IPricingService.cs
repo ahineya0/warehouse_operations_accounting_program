@@ -10,5 +10,6 @@ namespace warehouse_operations_accounting_program.Interfaces
     public interface IPricingService
     {
         decimal CalculateTotalCost(IContract contract);
+        decimal CalculateTotalDebt(IContractor contractor);
     }
 }

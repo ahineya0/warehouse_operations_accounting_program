@@ -6,7 +6,6 @@ using warehouse_operations_accounting_program.Models;
 
 namespace warehouse_operations_accounting_program.Interfaces
 {
-    [JsonDerivedType(typeof(Warehouse), typeDiscriminator: "base")]
     public interface IWarehouse
     {
         public List<WarehouseType> Type { get; set; }

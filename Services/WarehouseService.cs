@@ -51,7 +51,7 @@ namespace warehouse_operations_accounting_program.Services
             if (warehouse == null)
                 throw new ArgumentNullException(nameof(warehouse));
 
-            var unit = warehouse.StorageUnits.FirstOrDefault(u => u.Goods.Contains(goods));
+            var unit = warehouse.StorageUnits.FirstOrDefault(u => u.GetGoods().Contains(goods));
 
             if (unit == null)
                 throw new InvalidOperationException("Товар не найден на складе");
