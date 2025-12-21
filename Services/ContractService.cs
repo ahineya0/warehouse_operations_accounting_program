@@ -19,13 +19,22 @@ namespace warehouse_operations_accounting_program.Services
             return contracts;
         }
 
-        public void CreateContract(IContractor contractor, IWarehouse warehouse, int rentedUnits, decimal ratePerDay, DateTime startDate, DateTime endDate, Payment payment)
+        public void CreateRentContract(IContractor contractor, IWarehouse warehouse, DateTime startDate, DateTime endDate, Payment payment, decimal ratePerDay, int rentedUnits)
         {
-            if ()
+            if (contractor == null || warehouse == null || payment == null || startDate >= endDate || ratePerDay <= 0 || rentedUnits <= 0)
                 throw new ArgumentException("Неполные данные");
 
-            var сontract = new Contract(contractor, warehouse, rentedUnits, ratePerDay, startDate, endDate, payment);
-            contracts.Add(сontract);
+            var contract = new RentContract(contractor, warehouse, startDate, endDate, payment, ratePerDay, rentedUnits);
+            contracts.Add(contract);
+        }
+
+        public void CreateKeepingContract(IContractor contractor, IWarehouse warehouse, DateTime startDate, DateTime endDate, Payment payment, decimal ratePerDay, List<IGoods> goods)
+        {
+            if (contractor == null || warehouse == null || payment == null || startDate >= endDate || ratePerDay <= 0 || goods == null || goods.Count == 0)
+                throw new ArgumentException("Неполные данные");
+
+            var contract = new KeepingContract(contractor, warehouse, startDate, endDate, payment, ratePerDay, goods);
+            contracts.Add(contract);
         }
     }
 }
