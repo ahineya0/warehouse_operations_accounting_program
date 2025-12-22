@@ -84,6 +84,11 @@ namespace warehouse_operations_accounting_program.View
             presenter.OpenContractManagement();
         }
 
+        private void btnClient_Click(object sender, EventArgs e)
+        {
+            presenter.OpenClientInterface();
+        }
+
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             storage.Save(state);

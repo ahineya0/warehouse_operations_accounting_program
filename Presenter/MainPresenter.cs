@@ -31,6 +31,8 @@ namespace warehouse_operations_accounting_program.Presenter
                 view.ShowOperatorMenu();
             if (user.Role == UserRole.Manager)
                 view.ShowManagerMenu();
+            if (user.Role == UserRole.Client)
+                view.ShowClientMenu();
         }
         public void OpenWarehouseManagement()
         {
@@ -53,6 +55,10 @@ namespace warehouse_operations_accounting_program.Presenter
         public void OpenContractManagement()
         {
             view.ShowAsWingow(new ContractManagementForm(contractService, clientService, warehouseService));
+        }
+        public void OpenClientInterface()
+        {
+            view.ShowAsWingow(new ClientInterfaceForm(contractService, clientService, warehouseService));
         }
     }
 }

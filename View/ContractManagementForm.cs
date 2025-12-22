@@ -51,7 +51,8 @@ namespace warehouse_operations_accounting_program.View
                 Warehouse = c.Warehouse.Name,
                 Type = c is RentContract ? "Аренда" : "Хранение",
                 Cost = c.CalculateCost(),
-                Status = c.IsActive() ? "Активен" : "Завершен"
+                Status = c.IsActive() ? "Активен" : "Завершен",
+                PaymentStatus = c.IsPaid() ? "Оплачено" : "Ожидает оплаты"
             }).ToList();
         }
         public void ShowError(string message) => MessageBox.Show(message, "Ошибка");

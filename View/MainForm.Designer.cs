@@ -36,9 +36,11 @@
             btnContracts = new Button();
             btnClients = new Button();
             clientPanel = new Panel();
+            btnClient = new Button();
             adminPanel = new Panel();
             operatorPanel.SuspendLayout();
             managerPanel.SuspendLayout();
+            clientPanel.SuspendLayout();
             SuspendLayout();
             // 
             // operatorPanel
@@ -114,11 +116,22 @@
             // 
             // clientPanel
             // 
+            clientPanel.Controls.Add(btnClient);
             clientPanel.Location = new Point(12, 271);
             clientPanel.Name = "clientPanel";
             clientPanel.Size = new Size(405, 193);
             clientPanel.TabIndex = 2;
             clientPanel.Visible = false;
+            // 
+            // btnClient
+            // 
+            btnClient.Location = new Point(122, 71);
+            btnClient.Name = "btnClient";
+            btnClient.Size = new Size(133, 43);
+            btnClient.TabIndex = 0;
+            btnClient.Text = "Просмотреть мои данные";
+            btnClient.UseVisualStyleBackColor = true;
+            btnClient.Click += btnClient_Click;
             // 
             // adminPanel
             // 
@@ -142,6 +155,7 @@
             FormClosed += MainForm_FormClosed;
             operatorPanel.ResumeLayout(false);
             managerPanel.ResumeLayout(false);
+            clientPanel.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -156,5 +170,6 @@
         private Button btnContracts;
         private Panel clientPanel;
         private Panel adminPanel;
+        private Button btnClient;
     }
 }
