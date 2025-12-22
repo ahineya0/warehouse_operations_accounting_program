@@ -24,8 +24,13 @@ namespace warehouse_operations_accounting_program.View
         public void ShowClients(IEnumerable<Contractor> contractors)
         {
             dgvClients.DataSource = contractors.Select(w => new
-            { w.Name, w.ContactInfo, w.Contracts }
-            ).ToList();
+            {
+                w.Name,
+                w.ContactInfo,
+                Contracts = w.Contracts != null && w.Contracts.Any()
+            ? string.Join("; ", w.Contracts.Select(c => $"{c.Warehouse?.Name ?? "No Name"} ({c.StartDate:dd.MM.yyyy})"))
+            : "No contracts"
+            }).ToList();
         }
         private ClientManagementPresenter presenter;
         public ClientManagementForm(IClientService service)

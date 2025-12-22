@@ -36,7 +36,6 @@
             btnContracts = new Button();
             btnClients = new Button();
             clientPanel = new Panel();
-            accountantPanel = new Panel();
             adminPanel = new Panel();
             operatorPanel.SuspendLayout();
             managerPanel.SuspendLayout();
@@ -49,7 +48,7 @@
             operatorPanel.Controls.Add(btnIncomingGoods);
             operatorPanel.Location = new Point(446, 28);
             operatorPanel.Name = "operatorPanel";
-            operatorPanel.Size = new Size(402, 212);
+            operatorPanel.Size = new Size(352, 212);
             operatorPanel.TabIndex = 0;
             operatorPanel.Visible = false;
             // 
@@ -115,19 +114,11 @@
             // 
             // clientPanel
             // 
-            clientPanel.Location = new Point(209, 338);
+            clientPanel.Location = new Point(12, 271);
             clientPanel.Name = "clientPanel";
-            clientPanel.Size = new Size(200, 100);
+            clientPanel.Size = new Size(405, 193);
             clientPanel.TabIndex = 2;
             clientPanel.Visible = false;
-            // 
-            // accountantPanel
-            // 
-            accountantPanel.Location = new Point(498, 351);
-            accountantPanel.Name = "accountantPanel";
-            accountantPanel.Size = new Size(200, 100);
-            accountantPanel.TabIndex = 3;
-            accountantPanel.Visible = false;
             // 
             // adminPanel
             // 
@@ -141,9 +132,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1057, 626);
+            ClientSize = new Size(1057, 517);
             Controls.Add(adminPanel);
-            Controls.Add(accountantPanel);
             Controls.Add(clientPanel);
             Controls.Add(operatorPanel);
             Controls.Add(managerPanel);
@@ -165,7 +155,6 @@
         private Button btnClients;
         private Button btnContracts;
         private Panel clientPanel;
-        private Panel accountantPanel;
         private Panel adminPanel;
     }
 }

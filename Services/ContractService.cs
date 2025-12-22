@@ -26,6 +26,7 @@ namespace warehouse_operations_accounting_program.Services
 
             var contract = new RentContract(contractor, warehouse, startDate, endDate, payment, ratePerDay, rentedUnits);
             contracts.Add(contract);
+            contractor.AddContract(contract);
         }
 
         public void CreateKeepingContract(IContractor contractor, IWarehouse warehouse, DateTime startDate, DateTime endDate, Payment payment, decimal ratePerDay, List<IGoods> goods)
@@ -35,6 +36,7 @@ namespace warehouse_operations_accounting_program.Services
 
             var contract = new KeepingContract(contractor, warehouse, startDate, endDate, payment, ratePerDay, goods);
             contracts.Add(contract);
+            contractor.AddContract(contract);
         }
     }
 }
