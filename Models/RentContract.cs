@@ -8,9 +8,9 @@ namespace warehouse_operations_accounting_program.Models
 {
     public class RentContract : Contract
     {
-        public int RentedUnits { get; }
+        public int RentedUnits { get; set; }
 
-        public decimal RatePerUnitPerDay { get; }
+        public decimal RatePerUnitPerDay { get; set; }
 
         public RentContract(
             IContractor client,
@@ -23,6 +23,7 @@ namespace warehouse_operations_accounting_program.Models
             : base(client, warehouse, startDate, endDate, payment, ratePerUnitPerDay)
         {
             RentedUnits = rentedUnits;
+            RatePerUnitPerDay = ratePerUnitPerDay;
         }
         public RentContract() : base() { }
         public override decimal CalculateCost()

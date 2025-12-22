@@ -7,9 +7,9 @@ namespace warehouse_operations_accounting_program.Models
 {
     public class KeepingContract : Contract
     {
-        public List<IGoods> Goods { get; }
+        public List<IGoods> Goods { get; set; }
 
-        public decimal RatePerVolumePerDay { get; }
+        public decimal RatePerVolumePerDay { get; set; }
 
         public KeepingContract(
             IContractor client,

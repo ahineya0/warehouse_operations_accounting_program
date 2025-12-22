@@ -18,7 +18,7 @@ namespace warehouse_operations_accounting_program.Models
         public DateTime EndDate { get; set; }
 
         public Payment Payment { get; set; }
-        public decimal RatePerPerDay { get; set; }
+        public decimal RatePerDay { get; set; }
 
         protected Contract(
             IContractor client,
@@ -33,7 +33,7 @@ namespace warehouse_operations_accounting_program.Models
             StartDate = startDate;
             EndDate = endDate;
             Payment = payment;
-            RatePerPerDay = ratePerDay;
+            RatePerDay = ratePerDay;
         }
         protected Contract() { }
         public bool IsActive() => DateTime.Now >= StartDate && DateTime.Now <= EndDate;

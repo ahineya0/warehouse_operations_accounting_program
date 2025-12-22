@@ -32,11 +32,9 @@ namespace warehouse_operations_accounting_program.Presenter
 
         public void CreateRent()
         {
-            var days = (view.EndDate - view.StartDate).Days;
-            var totalAmount = view.RentedUnits * view.Rate * days;
             var payment = new Payment
             {
-                Amount = totalAmount,
+                Amount = view.RentedUnits * view.Rate * (view.EndDate - view.StartDate).Days,
                 Status = PaymentStatus.Pending,
                 IsCashless = view.IsCashless
             };
@@ -52,11 +50,9 @@ namespace warehouse_operations_accounting_program.Presenter
         }
         public void CreateKeeping()
         {
-            var days = (view.EndDate - view.StartDate).Days;
-            var totalAmount = view.RentedUnits * view.Rate * days;
             var payment = new Payment
             {
-                Amount = totalAmount,
+                Amount = view.RentedUnits * view.Rate * (view.EndDate - view.StartDate).Days,
                 Status = PaymentStatus.Pending,
                 IsCashless = view.IsCashless
             };
