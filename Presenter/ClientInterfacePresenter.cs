@@ -31,7 +31,7 @@ namespace warehouse_operations_accounting_program.Presenter
                 .ToList();
 
             _view.ShowMyContracts(myContracts.Select(c => new {
-                Id = c.GetHashCode(), // Временный ID для выбора
+                Id = c.GetHashCode(),
                 Type = c is RentContract ? "Аренда" : "Хранение",
                 Warehouse = c.Warehouse.Name,
                 Period = $"{c.StartDate.ToShortDateString()} - {c.EndDate.ToShortDateString()}",
@@ -46,6 +46,7 @@ namespace warehouse_operations_accounting_program.Presenter
         {
             var goodsInfo = new List<object>();
             var allWarehouses = _warehouseService.GetAll();
+            var groupedGoods = new Dictionary<string, (string GoodName, string Status, int Quantity)>();
 
             foreach (var contract in contracts.OfType<KeepingContract>())
             {
@@ -62,14 +63,27 @@ namespace warehouse_operations_accounting_program.Presenter
                             location = $"На складе: {warehouse.Name} ({warehouse.Address})";
                     }
 
-                    goodsInfo.Add(new
+                    var key = $"{item.Name}|{location}";
+                    if (groupedGoods.ContainsKey(key))
                     {
-                        GoodName = item.Name,
-                        Status = location,
-                        Quantity = item.Quantity
-                    });
+                        var existing = groupedGoods[key];
+                        groupedGoods[key] = (existing.GoodName, existing.Status, existing.Quantity + item.Quantity);
+                    }
+                    else
+                        groupedGoods[key] = (item.Name, location, item.Quantity);
                 }
             }
+
+            foreach (var goods in groupedGoods.Values)
+            {
+                goodsInfo.Add(new
+                {
+                    GoodName = goods.GoodName,
+                    Status = goods.Status,
+                    Quantity = goods.Quantity
+                });
+            }
+
             _view.ShowMyGoods(goodsInfo);
         }
 
