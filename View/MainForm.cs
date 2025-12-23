@@ -20,6 +20,7 @@ namespace warehouse_operations_accounting_program.View
         private readonly IWarehouseService warehouseService;
         private readonly IClientService clientService;
         private readonly IContractService contractService;
+        private readonly IDocumentService documentService;
 
         public MainForm(User user)
         {
@@ -31,7 +32,8 @@ namespace warehouse_operations_accounting_program.View
             warehouseService = new WarehouseService(state.Warehouses);
             clientService = new ClientService(state.Contractors);
             contractService = new ContractService(state.Contracts);
-            presenter = new MainPresenter(this, user, warehouseService, clientService, contractService);
+            documentService = new DocumentService(state.Documents);
+            presenter = new MainPresenter(this, user, warehouseService, clientService, contractService, documentService);
 
             presenter.Initialize();
         }
@@ -99,6 +101,11 @@ namespace warehouse_operations_accounting_program.View
         private void btnSave_Click(object sender, EventArgs e)
         {
             storage.Save(state);
+        }
+
+        private void btnListView_Click(object sender, EventArgs e)
+        {
+            presenter.OpenInvoicesList();
         }
     }
 }

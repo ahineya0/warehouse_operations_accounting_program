@@ -17,10 +17,10 @@ namespace warehouse_operations_accounting_program.View
     {
         private readonly IncomingInvoicePresenter _presenter;
 
-        public IncomingInvoiceForm(IContractService contractService, IWarehouseService warehouseService)
+        public IncomingInvoiceForm(IContractService contractService, IWarehouseService warehouseService, IDocumentService documentService)
         {
             InitializeComponent();
-            _presenter = new IncomingInvoicePresenter(this, contractService, warehouseService);
+            _presenter = new IncomingInvoicePresenter(this, contractService, warehouseService, documentService);
             _presenter.Initialize();
             lbStorageUnits.SelectionMode = SelectionMode.MultiExtended;
         }

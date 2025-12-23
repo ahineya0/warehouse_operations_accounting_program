@@ -39,6 +39,7 @@
             btnClient = new Button();
             adminPanel = new Panel();
             btnSave = new Button();
+            btnListView = new Button();
             operatorPanel.SuspendLayout();
             managerPanel.SuspendLayout();
             clientPanel.SuspendLayout();
@@ -46,6 +47,7 @@
             // 
             // operatorPanel
             // 
+            operatorPanel.Controls.Add(btnListView);
             operatorPanel.Controls.Add(btnWarehouses);
             operatorPanel.Controls.Add(btnOutgoingGoods);
             operatorPanel.Controls.Add(btnIncomingGoods);
@@ -152,6 +154,16 @@
             btnSave.UseVisualStyleBackColor = true;
             btnSave.Click += btnSave_Click;
             // 
+            // btnListView
+            // 
+            btnListView.Location = new Point(254, 146);
+            btnListView.Name = "btnListView";
+            btnListView.Size = new Size(75, 41);
+            btnListView.TabIndex = 3;
+            btnListView.Text = "Просмотреть накладные";
+            btnListView.UseVisualStyleBackColor = true;
+            btnListView.Click += btnListView_Click;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -184,5 +196,6 @@
         private Panel adminPanel;
         private Button btnClient;
         private Button btnSave;
+        private Button btnListView;
     }
 }
