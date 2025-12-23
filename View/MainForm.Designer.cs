@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             operatorPanel = new Panel();
+            btnListView = new Button();
             btnWarehouses = new Button();
             btnOutgoingGoods = new Button();
             btnIncomingGoods = new Button();
@@ -37,9 +38,6 @@
             btnClients = new Button();
             clientPanel = new Panel();
             btnClient = new Button();
-            adminPanel = new Panel();
-            btnSave = new Button();
-            btnListView = new Button();
             operatorPanel.SuspendLayout();
             managerPanel.SuspendLayout();
             clientPanel.SuspendLayout();
@@ -51,15 +49,25 @@
             operatorPanel.Controls.Add(btnWarehouses);
             operatorPanel.Controls.Add(btnOutgoingGoods);
             operatorPanel.Controls.Add(btnIncomingGoods);
-            operatorPanel.Location = new Point(446, 28);
+            operatorPanel.Location = new Point(54, 12);
             operatorPanel.Name = "operatorPanel";
             operatorPanel.Size = new Size(352, 212);
             operatorPanel.TabIndex = 0;
             operatorPanel.Visible = false;
             // 
+            // btnListView
+            // 
+            btnListView.Location = new Point(214, 144);
+            btnListView.Name = "btnListView";
+            btnListView.Size = new Size(115, 41);
+            btnListView.TabIndex = 3;
+            btnListView.Text = "Просмотреть накладные";
+            btnListView.UseVisualStyleBackColor = true;
+            btnListView.Click += btnListView_Click;
+            // 
             // btnWarehouses
             // 
-            btnWarehouses.Location = new Point(23, 20);
+            btnWarehouses.Location = new Point(87, 23);
             btnWarehouses.Name = "btnWarehouses";
             btnWarehouses.Size = new Size(183, 43);
             btnWarehouses.TabIndex = 2;
@@ -71,7 +79,7 @@
             // 
             btnOutgoingGoods.Location = new Point(22, 146);
             btnOutgoingGoods.Name = "btnOutgoingGoods";
-            btnOutgoingGoods.Size = new Size(92, 39);
+            btnOutgoingGoods.Size = new Size(106, 39);
             btnOutgoingGoods.TabIndex = 1;
             btnOutgoingGoods.Text = "Отпуск ТМЦ";
             btnOutgoingGoods.UseVisualStyleBackColor = true;
@@ -79,9 +87,9 @@
             // 
             // btnIncomingGoods
             // 
-            btnIncomingGoods.Location = new Point(23, 86);
+            btnIncomingGoods.Location = new Point(23, 91);
             btnIncomingGoods.Name = "btnIncomingGoods";
-            btnIncomingGoods.Size = new Size(93, 38);
+            btnIncomingGoods.Size = new Size(105, 38);
             btnIncomingGoods.TabIndex = 0;
             btnIncomingGoods.Text = "Приём ТМЦ";
             btnIncomingGoods.UseVisualStyleBackColor = true;
@@ -91,17 +99,17 @@
             // 
             managerPanel.Controls.Add(btnContracts);
             managerPanel.Controls.Add(btnClients);
-            managerPanel.Location = new Point(12, 28);
+            managerPanel.Location = new Point(236, 248);
             managerPanel.Name = "managerPanel";
-            managerPanel.Size = new Size(405, 212);
+            managerPanel.Size = new Size(195, 173);
             managerPanel.TabIndex = 1;
             managerPanel.Visible = false;
             // 
             // btnContracts
             // 
-            btnContracts.Location = new Point(17, 86);
+            btnContracts.Location = new Point(20, 91);
             btnContracts.Name = "btnContracts";
-            btnContracts.Size = new Size(107, 50);
+            btnContracts.Size = new Size(150, 38);
             btnContracts.TabIndex = 1;
             btnContracts.Text = "Работа с договорами";
             btnContracts.UseVisualStyleBackColor = true;
@@ -109,9 +117,9 @@
             // 
             // btnClients
             // 
-            btnClients.Location = new Point(17, 20);
+            btnClients.Location = new Point(20, 47);
             btnClients.Name = "btnClients";
-            btnClients.Size = new Size(107, 49);
+            btnClients.Size = new Size(150, 38);
             btnClients.TabIndex = 0;
             btnClients.Text = "Работа с клиентами";
             btnClients.UseVisualStyleBackColor = true;
@@ -120,62 +128,33 @@
             // clientPanel
             // 
             clientPanel.Controls.Add(btnClient);
-            clientPanel.Location = new Point(12, 271);
+            clientPanel.Location = new Point(12, 251);
             clientPanel.Name = "clientPanel";
-            clientPanel.Size = new Size(405, 193);
+            clientPanel.Size = new Size(195, 164);
             clientPanel.TabIndex = 2;
             clientPanel.Visible = false;
             // 
             // btnClient
             // 
-            btnClient.Location = new Point(122, 71);
+            btnClient.Location = new Point(32, 58);
             btnClient.Name = "btnClient";
             btnClient.Size = new Size(133, 43);
             btnClient.TabIndex = 0;
-            btnClient.Text = "Просмотреть мои данные";
+            btnClient.Text = "Просмотреть пользователя";
             btnClient.UseVisualStyleBackColor = true;
             btnClient.Click += btnClient_Click;
-            // 
-            // adminPanel
-            // 
-            adminPanel.Location = new Point(757, 355);
-            adminPanel.Name = "adminPanel";
-            adminPanel.Size = new Size(200, 100);
-            adminPanel.TabIndex = 4;
-            adminPanel.Visible = false;
-            // 
-            // btnSave
-            // 
-            btnSave.Location = new Point(534, 426);
-            btnSave.Name = "btnSave";
-            btnSave.Size = new Size(75, 48);
-            btnSave.TabIndex = 5;
-            btnSave.Text = "Сохранить изменения";
-            btnSave.UseVisualStyleBackColor = true;
-            btnSave.Click += btnSave_Click;
-            // 
-            // btnListView
-            // 
-            btnListView.Location = new Point(254, 146);
-            btnListView.Name = "btnListView";
-            btnListView.Size = new Size(75, 41);
-            btnListView.TabIndex = 3;
-            btnListView.Text = "Просмотреть накладные";
-            btnListView.UseVisualStyleBackColor = true;
-            btnListView.Click += btnListView_Click;
             // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1057, 517);
-            Controls.Add(btnSave);
-            Controls.Add(adminPanel);
+            BackColor = SystemColors.ActiveCaption;
+            ClientSize = new Size(483, 427);
             Controls.Add(clientPanel);
             Controls.Add(operatorPanel);
             Controls.Add(managerPanel);
             Name = "MainForm";
-            Text = "MainForm";
+            Text = "Выберите действие";
             FormClosed += MainForm_FormClosed;
             operatorPanel.ResumeLayout(false);
             managerPanel.ResumeLayout(false);
@@ -193,9 +172,7 @@
         private Button btnClients;
         private Button btnContracts;
         private Panel clientPanel;
-        private Panel adminPanel;
         private Button btnClient;
-        private Button btnSave;
         private Button btnListView;
     }
 }

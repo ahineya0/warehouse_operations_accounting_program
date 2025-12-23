@@ -35,6 +35,8 @@ namespace warehouse_operations_accounting_program.Presenter
                 view.ShowManagerMenu();
             if (user.Role == UserRole.Client)
                 view.ShowClientMenu();
+            if (user.Role == UserRole.Administrator)
+                view.ShowAdministratorMenu();
         }
         public void OpenWarehouseManagement()
         {

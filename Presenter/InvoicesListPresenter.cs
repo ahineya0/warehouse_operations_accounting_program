@@ -27,7 +27,7 @@ namespace warehouse_operations_accounting_program.Presenter
                     Тип = d is IncomingInvoice ? "Приход" : "Расход",
                     Дата = d.Date.ToString("g"),
                     Оператор = d.OperatorName,
-                    Контракт = $"ID: {d.Contract.Warehouse} ({d.Contract.Client.Name})",
+                    Контракт = $"ID: {d.Contract.Warehouse.Name} ({d.Contract.Client.Name})",
                     Содержимое = string.Join(", ", d.Goods.Select(g => $"{g.Name} ({g.Quantity} шт.)"))
                 })
                 .ToList();

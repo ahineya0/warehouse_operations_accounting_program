@@ -55,7 +55,9 @@ namespace warehouse_operations_accounting_program.View
 
         public void ShowAdministratorMenu()
         {
-            adminPanel.Visible = true;
+            operatorPanel.Visible = true;
+            managerPanel.Visible = true;
+            clientPanel.Visible = true;
         }
 
         public void ShowAsWingow(Form form)
@@ -96,11 +98,6 @@ namespace warehouse_operations_accounting_program.View
             storage.Save(state);
             var login = new LoginForm();
             login.Show();
-        }
-
-        private void btnSave_Click(object sender, EventArgs e)
-        {
-            storage.Save(state);
         }
 
         private void btnListView_Click(object sender, EventArgs e)

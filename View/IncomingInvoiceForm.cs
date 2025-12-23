@@ -22,7 +22,6 @@ namespace warehouse_operations_accounting_program.View
             InitializeComponent();
             _presenter = new IncomingInvoicePresenter(this, contractService, warehouseService, documentService);
             _presenter.Initialize();
-            lbStorageUnits.SelectionMode = SelectionMode.MultiExtended;
         }
 
         public string OperatorName => txtOperatorName.Text;
@@ -39,7 +38,6 @@ namespace warehouse_operations_accounting_program.View
             cbContracts.Items.Clear();
             foreach (var contract in contracts)
                 cbContracts.Items.Add(new ContractListItem(contract));
-
             cbContracts.DisplayMember = "DisplayText";
         }
 

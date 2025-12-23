@@ -33,6 +33,10 @@
             txtAddress = new TextBox();
             clbTypes = new CheckedListBox();
             btnAddWarehouse = new Button();
+            label1 = new Label();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)dgvWarehouses).BeginInit();
             SuspendLayout();
             // 
@@ -40,58 +44,101 @@
             // 
             dgvWarehouses.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
             dgvWarehouses.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            dgvWarehouses.BackgroundColor = SystemColors.Info;
             dgvWarehouses.ClipboardCopyMode = DataGridViewClipboardCopyMode.Disable;
             dgvWarehouses.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvWarehouses.Location = new Point(29, 38);
+            dgvWarehouses.EditMode = DataGridViewEditMode.EditProgrammatically;
+            dgvWarehouses.Location = new Point(13, 38);
             dgvWarehouses.Name = "dgvWarehouses";
-            dgvWarehouses.SelectionMode = DataGridViewSelectionMode.CellSelect;
-            dgvWarehouses.Size = new Size(550, 384);
+            dgvWarehouses.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvWarehouses.Size = new Size(822, 535);
             dgvWarehouses.TabIndex = 0;
             // 
             // txtName
             // 
-            txtName.Location = new Point(621, 90);
+            txtName.Location = new Point(879, 141);
             txtName.Name = "txtName";
-            txtName.Size = new Size(100, 23);
+            txtName.Size = new Size(208, 23);
             txtName.TabIndex = 1;
             // 
             // txtAddress
             // 
-            txtAddress.Location = new Point(621, 138);
+            txtAddress.Location = new Point(879, 195);
             txtAddress.Name = "txtAddress";
-            txtAddress.Size = new Size(100, 23);
+            txtAddress.Size = new Size(208, 23);
             txtAddress.TabIndex = 2;
             // 
             // clbTypes
             // 
             clbTypes.FormattingEnabled = true;
-            clbTypes.Location = new Point(621, 192);
+            clbTypes.Location = new Point(879, 252);
             clbTypes.Name = "clbTypes";
-            clbTypes.Size = new Size(120, 94);
+            clbTypes.Size = new Size(208, 112);
             clbTypes.TabIndex = 3;
             // 
             // btnAddWarehouse
             // 
-            btnAddWarehouse.Location = new Point(621, 306);
+            btnAddWarehouse.Location = new Point(918, 390);
             btnAddWarehouse.Name = "btnAddWarehouse";
-            btnAddWarehouse.Size = new Size(120, 23);
+            btnAddWarehouse.Size = new Size(120, 36);
             btnAddWarehouse.TabIndex = 4;
             btnAddWarehouse.Text = "Добавить склад";
             btnAddWarehouse.UseVisualStyleBackColor = true;
             btnAddWarehouse.Click += btnAddWarehouse_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 12F);
+            label1.Location = new Point(13, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(64, 21);
+            label1.TabIndex = 5;
+            label1.Text = "Склады";
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(879, 118);
+            label2.Name = "label2";
+            label2.Size = new Size(59, 15);
+            label2.TabIndex = 6;
+            label2.Text = "Название";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(879, 177);
+            label3.Name = "label3";
+            label3.Size = new Size(40, 15);
+            label3.TabIndex = 7;
+            label3.Text = "Адрес";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(879, 234);
+            label4.Name = "label4";
+            label4.Size = new Size(209, 15);
+            label4.TabIndex = 8;
+            label4.Text = "Поддерживаемые условия хранения";
+            // 
             // WarehouseManagementForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(855, 588);
+            ClientSize = new Size(1099, 603);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(label1);
             Controls.Add(btnAddWarehouse);
             Controls.Add(clbTypes);
             Controls.Add(txtAddress);
             Controls.Add(txtName);
             Controls.Add(dgvWarehouses);
             Name = "WarehouseManagementForm";
-            Text = "WarehouseManagementForm";
+            Text = "Управление складами";
             ((System.ComponentModel.ISupportInitialize)dgvWarehouses).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -104,5 +151,9 @@
         private TextBox txtAddress;
         private CheckedListBox clbTypes;
         private Button btnAddWarehouse;
+        private Label label1;
+        private Label label2;
+        private Label label3;
+        private Label label4;
     }
 }

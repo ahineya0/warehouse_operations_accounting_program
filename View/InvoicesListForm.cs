@@ -20,27 +20,13 @@ namespace warehouse_operations_accounting_program.View
             InitializeComponent();
             _presenter = new InvoicesListPresenter(this, documentService);
 
-            ConfigureGrid();
             this.Load += (s, e) => _presenter.RefreshData();
-        }
-
-        private void ConfigureGrid()
-        {
-            dgvInvoices.ReadOnly = true;
-            dgvInvoices.AllowUserToAddRows = false;
-            dgvInvoices.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dgvInvoices.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dgvInvoices.RowHeadersVisible = false;
-            dgvInvoices.BackgroundColor = Color.White;
         }
 
         public void ShowInvoices(IEnumerable<object> invoices)
         {
             dgvInvoices.DataSource = null;
             dgvInvoices.DataSource = invoices;
-
-            if (dgvInvoices.Columns["Содержимое"] != null)
-                dgvInvoices.Columns["Содержимое"].FillWeight = 200;
         }
 
         private void btnUpdate_Click(object sender, EventArgs e)

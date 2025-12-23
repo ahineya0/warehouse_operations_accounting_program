@@ -38,6 +38,12 @@ namespace warehouse_operations_accounting_program.View
             dgvBatches.DataSource = null;
             dgvBatches.DataSource = ResultGoods.Cast<Goods>().ToList();
         }
+        private void btnDeleteBatch_Click(object sender, EventArgs e)
+        {
+            if (dgvBatches.CurrentRow?.DataBoundItem is IGoods batch)
+                ResultGoods.Remove(batch);
+            UpdateGrid();
+        }
         public GoodsSelectionForm()
         {
             InitializeComponent();
