@@ -22,7 +22,15 @@ namespace warehouse_operations_accounting_program.Models
             VolumePerUnit = volumePerUnit;
         }
 
-        public decimal TotalArea() => Quantity * AreaPerUnit;
-        public decimal TotalVolume() => Quantity * VolumePerUnit;
+        public decimal TotalArea
+        {
+            get => Quantity * AreaPerUnit;
+            set;
+        }
+        public decimal TotalVolume
+        {
+            get => Quantity * VolumePerUnit;
+            set;
+        }
     }
 }

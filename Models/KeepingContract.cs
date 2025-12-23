@@ -35,7 +35,7 @@ namespace warehouse_operations_accounting_program.Models
 
         public override decimal CalculateCost()
         {
-            var totalVolume = Goods.Sum(g => g.TotalVolume());
+            var totalVolume = Goods.Sum(g => g.TotalVolume);
             var days = (EndDate - StartDate).Days;
 
             return totalVolume * RatePerVolumePerDay * days;

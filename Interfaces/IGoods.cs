@@ -12,7 +12,7 @@ namespace warehouse_operations_accounting_program.Interfaces
         string Name { get; set; }
         int Quantity { get; set; }
         WarehouseType RequiredStorageType { get; set; }
-        decimal TotalArea();
-        decimal TotalVolume();
+        decimal TotalArea { get; set; }
+        decimal TotalVolume { get; set; }
     }
 }
