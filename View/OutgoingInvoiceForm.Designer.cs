@@ -134,7 +134,7 @@
             Controls.Add(txtOperatorName);
             Controls.Add(dgvStoredGoods);
             Name = "OutgoingInvoiceForm";
-            Text = "OutgoingInvoiceForm";
+            Text = "Оформление";
             ((System.ComponentModel.ISupportInitialize)dgvStoredGoods).EndInit();
             ResumeLayout(false);
             PerformLayout();

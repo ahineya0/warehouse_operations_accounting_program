@@ -11,7 +11,7 @@ namespace warehouse_operations_accounting_program.Interfaces
     {
         string Name { get; }
         List<WarehouseType> Type { get; set; }
-        public List<IStorageUnit> StorageUnits { get; set; }
+        List<IStorageUnit> StorageUnits { get; set; }
         bool TryStoreGoods(IGoods goods);
     }
 }

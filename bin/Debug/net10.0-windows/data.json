@@ -1,293 +1,862 @@
 {
   "$id": "1",
-  "Warehouses": {
-    "$id": "2",
-    "$values": [
-      {
-        "$id": "3",
-        "Name": "\u041B\u043E\u0433\u0438\u0441\u0442\u0438\u0447\u0435\u0441\u043A\u0438\u0439 \u0446\u0435\u043D\u0442\u0440",
-        "Type": {
+  "Warehouses": [
+    {
+      "$id": "2",
+      "Name": "Склад МСК",
+      "Type": [
+        0
+      ],
+      "Address": "Северный проезд, 35/3",
+      "StorageUnits": [
+        {
+          "$id": "3",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 1,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
           "$id": "4",
-          "$values": [
-            "Construction"
-          ]
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 2,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
         },
-        "Address": "\u0443\u043B. \u0422\u0440\u043E\u043B\u043B\u0435\u0439\u043D\u0430\u044F, 87",
-        "StorageUnits": {
+        {
           "$id": "5",
-          "$values": [
-            {
-              "$id": "6",
-              "$type": "base",
-              "Id": 1,
-              "AreaCapacity": 100,
-              "VolumeCapacity": 100,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            },
-            {
-              "$id": "7",
-              "$type": "base",
-              "Id": 2,
-              "AreaCapacity": 100,
-              "VolumeCapacity": 100,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            },
-            {
-              "$id": "8",
-              "$type": "base",
-              "Id": 3,
-              "AreaCapacity": 100,
-              "VolumeCapacity": 100,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            },
-            {
-              "$id": "9",
-              "$type": "base",
-              "Id": 4,
-              "AreaCapacity": 100,
-              "VolumeCapacity": 100,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            },
-            {
-              "$id": "10",
-              "$type": "base",
-              "Id": 5,
-              "AreaCapacity": 100,
-              "VolumeCapacity": 100,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            },
-            {
-              "$id": "11",
-              "$type": "base",
-              "Id": 6,
-              "AreaCapacity": 100,
-              "VolumeCapacity": 100,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            },
-            {
-              "$id": "12",
-              "$type": "base",
-              "Id": 7,
-              "AreaCapacity": 100,
-              "VolumeCapacity": 100,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            },
-            {
-              "$id": "13",
-              "$type": "base",
-              "Id": 8,
-              "AreaCapacity": 100,
-              "VolumeCapacity": 100,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            },
-            {
-              "$id": "14",
-              "$type": "base",
-              "Id": 9,
-              "AreaCapacity": 100,
-              "VolumeCapacity": 100,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            },
-            {
-              "$id": "15",
-              "$type": "base",
-              "Id": 10,
-              "AreaCapacity": 100,
-              "VolumeCapacity": 100,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            },
-            {
-              "$id": "16",
-              "$type": "base",
-              "Id": 11,
-              "AreaCapacity": 6,
-              "VolumeCapacity": 60,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            },
-            {
-              "$id": "17",
-              "$type": "base",
-              "Id": 12,
-              "AreaCapacity": 6,
-              "VolumeCapacity": 60,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            }
-          ]
-        }
-      },
-      {
-        "$id": "18",
-        "Name": "\u0410\u043D\u0433\u0430\u0440 \u0433\u043E\u0442\u043E\u0432\u043E\u0439 \u043F\u0440\u043E\u0434\u0443\u043A\u0446\u0438\u0438",
-        "Type": {
-          "$id": "19",
-          "$values": [
-            "Refrigeration",
-            "Heating"
-          ]
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 3,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
         },
-        "Address": "\u0443\u043B. \u041D\u0435\u043C\u0438\u0440\u043E\u0432\u0438\u0447\u0430-\u0414\u0430\u043D\u0447\u0435\u043D\u043A\u043E, 146",
-        "StorageUnits": {
+        {
+          "$id": "6",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 4,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "7",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 5,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "8",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 6,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "9",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 7,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "10",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 8,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "11",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 9,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "12",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 10,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "13",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 11,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "14",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 12,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "15",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 13,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "16",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 14,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "17",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 15,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "18",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 16,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "19",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 17,
+          "AreaCapacity": 20.0,
+          "VolumeCapacity": 40.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
           "$id": "20",
-          "$values": [
-            {
-              "$id": "21",
-              "$type": "base",
-              "Id": 1,
-              "AreaCapacity": 20,
-              "VolumeCapacity": 100,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            },
-            {
-              "$id": "22",
-              "$type": "base",
-              "Id": 2,
-              "AreaCapacity": 20,
-              "VolumeCapacity": 100,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            },
-            {
-              "$id": "23",
-              "$type": "base",
-              "Id": 3,
-              "AreaCapacity": 20,
-              "VolumeCapacity": 100,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            },
-            {
-              "$id": "24",
-              "$type": "base",
-              "Id": 4,
-              "AreaCapacity": 20,
-              "VolumeCapacity": 100,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            },
-            {
-              "$id": "25",
-              "$type": "base",
-              "Id": 5,
-              "AreaCapacity": 10,
-              "VolumeCapacity": 50,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            },
-            {
-              "$id": "26",
-              "$type": "base",
-              "Id": 6,
-              "AreaCapacity": 10,
-              "VolumeCapacity": 50,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            },
-            {
-              "$id": "27",
-              "$type": "base",
-              "Id": 7,
-              "AreaCapacity": 4,
-              "VolumeCapacity": 16,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            },
-            {
-              "$id": "28",
-              "$type": "base",
-              "Id": 8,
-              "AreaCapacity": 4,
-              "VolumeCapacity": 16,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            },
-            {
-              "$id": "29",
-              "$type": "base",
-              "Id": 9,
-              "AreaCapacity": 4,
-              "VolumeCapacity": 16,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            },
-            {
-              "$id": "30",
-              "$type": "base",
-              "Id": 10,
-              "AreaCapacity": 4,
-              "VolumeCapacity": 16,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            },
-            {
-              "$id": "31",
-              "$type": "base",
-              "Id": 11,
-              "AreaCapacity": 4,
-              "VolumeCapacity": 16,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            },
-            {
-              "$id": "32",
-              "$type": "base",
-              "Id": 12,
-              "AreaCapacity": 4,
-              "VolumeCapacity": 16,
-              "OccupiedArea": 0,
-              "OccupiedVolume": 0
-            }
-          ]
-        }
-      }
-    ]
-  },
-  "Contractors": {
-    "$id": "33",
-    "$values": [
-      {
-        "$id": "34",
-        "$type": "person",
-        "PassportData": "060857994578",
-        "Name": "\u041D\u0430\u0443\u043C\u043E\u0432 \u0421\u0435\u0440\u0433\u0435\u0439",
-        "ContactInfo": "\u002B79950103239",
-        "Contracts": {
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 18,
+          "AreaCapacity": 20.0,
+          "VolumeCapacity": 40.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "21",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 19,
+          "AreaCapacity": 20.0,
+          "VolumeCapacity": 40.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "22",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 20,
+          "AreaCapacity": 20.0,
+          "VolumeCapacity": 40.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "23",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 21,
+          "AreaCapacity": 20.0,
+          "VolumeCapacity": 40.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "24",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 22,
+          "AreaCapacity": 20.0,
+          "VolumeCapacity": 40.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "25",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 23,
+          "AreaCapacity": 20.0,
+          "VolumeCapacity": 40.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "26",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 24,
+          "AreaCapacity": 20.0,
+          "VolumeCapacity": 40.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "27",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 25,
+          "AreaCapacity": 20.0,
+          "VolumeCapacity": 40.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "28",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 26,
+          "AreaCapacity": 20.0,
+          "VolumeCapacity": 40.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "29",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 27,
+          "AreaCapacity": 20.0,
+          "VolumeCapacity": 40.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "30",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 28,
+          "AreaCapacity": 20.0,
+          "VolumeCapacity": 40.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "31",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 29,
+          "AreaCapacity": 20.0,
+          "VolumeCapacity": 40.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "32",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 30,
+          "AreaCapacity": 20.0,
+          "VolumeCapacity": 40.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "33",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 31,
+          "AreaCapacity": 20.0,
+          "VolumeCapacity": 40.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "34",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 32,
+          "AreaCapacity": 20.0,
+          "VolumeCapacity": 40.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
           "$id": "35",
-          "$values": []
-        }
-      },
-      {
-        "$id": "36",
-        "$type": "company",
-        "INN": "645556121353",
-        "KPP": "549688896694",
-        "Name": "\u041E\u041E\u041E \u0428\u0438\u043D-\u041B\u0430\u0439\u043D",
-        "ContactInfo": "shin-lain@gmail.com",
-        "Contracts": {
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 33,
+          "AreaCapacity": 20.0,
+          "VolumeCapacity": 40.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "36",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 34,
+          "AreaCapacity": 20.0,
+          "VolumeCapacity": 40.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
           "$id": "37",
-          "$values": []
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 35,
+          "AreaCapacity": 20.0,
+          "VolumeCapacity": 40.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "38",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 36,
+          "AreaCapacity": 20.0,
+          "VolumeCapacity": 40.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
         }
+      ]
+    },
+    {
+      "$id": "39",
+      "Name": "Сухой склад",
+      "Type": [
+        0,
+        1,
+        2
+      ],
+      "Address": "​Большевистская улица, 276/1",
+      "StorageUnits": [
+        {
+          "$id": "40",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 1,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "41",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 2,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "42",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 3,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "43",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 4,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "44",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 5,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "45",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 6,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "46",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 7,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "47",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 8,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "48",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 9,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "49",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 10,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "50",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 11,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "51",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 12,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "52",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 13,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "53",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 14,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "54",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 15,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "55",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 16,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "56",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 17,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "57",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 18,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "58",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 19,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "59",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 20,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "60",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 21,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "61",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 22,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "62",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 23,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "63",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 24,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "64",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 25,
+          "AreaCapacity": 1.0,
+          "VolumeCapacity": 2.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "65",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 26,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "66",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 27,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "67",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 28,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "68",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 29,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "69",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 30,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "70",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 31,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "71",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 32,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "72",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 33,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "73",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 34,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        },
+        {
+          "$id": "74",
+          "$type": "warehouse_operations_accounting_program.Models.StorageUnit, warehouse operations accounting program",
+          "goods": [],
+          "Id": 35,
+          "AreaCapacity": 4.0,
+          "VolumeCapacity": 8.0,
+          "OccupiedArea": 0.0,
+          "OccupiedVolume": 0.0,
+          "IsFree": true
+        }
+      ]
+    }
+  ],
+  "Contractors": [
+    {
+      "$id": "75",
+      "$type": "warehouse_operations_accounting_program.Models.Individual, warehouse operations accounting program",
+      "PassportData": "N12906920",
+      "Name": "Мустафин",
+      "ContactInfo": "+79950103239",
+      "Contracts": {
+        "$type": "System.Collections.Generic.List`1[[warehouse_operations_accounting_program.Interfaces.IContract, warehouse operations accounting program]], System.Private.CoreLib",
+        "$values": [
+          {
+            "$id": "76",
+            "$type": "warehouse_operations_accounting_program.Models.KeepingContract, warehouse operations accounting program",
+            "Goods": [
+              {
+                "$id": "77",
+                "$type": "warehouse_operations_accounting_program.Models.Goods, warehouse operations accounting program",
+                "Name": "Кирпич облицовочный керамический М150",
+                "RequiredStorageType": 0,
+                "Quantity": 10,
+                "AreaPerUnit": 4.0,
+                "VolumePerUnit": 16.0,
+                "TotalArea": 40.0,
+                "TotalVolume": 160.0
+              }
+            ],
+            "RatePerVolumePerDay": 100.0,
+            "Client": {
+              "$ref": "75"
+            },
+            "Warehouse": {
+              "$ref": "2"
+            },
+            "StartDate": "2025-12-23T20:17:07.1971982+07:00",
+            "EndDate": "2025-12-31T20:17:07.194",
+            "Payment": {
+              "$id": "78",
+              "Amount": 0.0,
+              "Date": "2025-12-23T20:19:50.0884359+07:00",
+              "Status": 0,
+              "IsCashless": true
+            },
+            "RatePerDay": 100.0
+          }
+        ]
       }
-    ]
-  },
-  "Contracts": {
-    "$id": "38",
-    "$values": []
-  },
-  "Documents": {
-    "$id": "39",
-    "$values": []
-  }
+    }
+  ],
+  "Contracts": [
+    {
+      "$ref": "76"
+    }
+  ],
+  "Documents": []
 }
