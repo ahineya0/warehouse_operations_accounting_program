@@ -12,12 +12,14 @@ namespace warehouse_operations_accounting_program.Presenter
         private readonly IOutgoingInvoiceView _view;
         private readonly IContractService _contractService;
         private readonly IWarehouseService _warehouseService;
+        private readonly IDocumentService _documentService;
 
-        public OutgoingInvoicePresenter(IOutgoingInvoiceView view, IContractService contractService, IWarehouseService warehouseService)
+        public OutgoingInvoicePresenter(IOutgoingInvoiceView view, IContractService contractService, IWarehouseService warehouseService, IDocumentService documentService)
         {
             _view = view;
             _contractService = contractService;
             _warehouseService = warehouseService;
+            _documentService = documentService;
         }
 
         public void Initialize()
@@ -65,6 +67,7 @@ namespace warehouse_operations_accounting_program.Presenter
             contract.Goods.Remove(goods);
 
             invoice.ReleaseGoods(goods);
+            _documentService.RegisterDocument(invoice);
         }
 
         private void ReleaseRent(RentContract contract, OutcomingInvoice invoice)
@@ -77,6 +80,7 @@ namespace warehouse_operations_accounting_program.Presenter
                 if (unit.IsFree) throw new Exception($"Ячейка {unit.Id} уже свободна");
                 unit.IsFree = true;
             }
+            _documentService.RegisterDocument(invoice);
         }
 
         private void RefreshUI(IContract contract)

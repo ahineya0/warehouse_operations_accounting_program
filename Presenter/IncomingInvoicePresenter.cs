@@ -14,12 +14,14 @@ namespace warehouse_operations_accounting_program.Presenter
         private readonly IIncomingInvoiceView _view;
         private readonly IContractService _contractService;
         private readonly IWarehouseService _warehouseService;
+        private readonly IDocumentService _documentService;
 
-        public IncomingInvoicePresenter(IIncomingInvoiceView view, IContractService contractService, IWarehouseService warehouseService)
+        public IncomingInvoicePresenter(IIncomingInvoiceView view, IContractService contractService, IWarehouseService warehouseService, IDocumentService documentService)
         {
             _view = view;
             _contractService = contractService;
             _warehouseService = warehouseService;
+            _documentService = documentService;
         }
 
         public void Initialize()
@@ -55,6 +57,7 @@ namespace warehouse_operations_accounting_program.Presenter
                     _view.ShowSuccess("Приёмка оформлена");
                 }
                 RefreshUI(contract);
+                _documentService.RegisterDocument(invoice);
             }
             catch (Exception ex)
             {
@@ -64,7 +67,6 @@ namespace warehouse_operations_accounting_program.Presenter
 
         private void AcceptKeeping(KeepingContract contract, IncomingInvoice invoice)
         {
-            // 1. Сразу фиксируем список ВЫДЕЛЕННЫХ ячеек в локальную переменную
             var selectedUnits = _view.SelectedStorageUnits.ToList();
             var selectedGoods = _view.SelectedGoods.ToList();
 
@@ -73,7 +75,6 @@ namespace warehouse_operations_accounting_program.Presenter
 
             foreach (var goodsItem in selectedGoods)
             {
-                // Сверяем по имени, так как при десериализации/обновлении ссылки на объекты меняются
                 bool alreadyStored = contract.Warehouse.StorageUnits
                     .Any(u => u.GetGoods().Any(g => g.Name == goodsItem.Name));
 
@@ -85,7 +86,6 @@ namespace warehouse_operations_accounting_program.Presenter
 
                 int remaining = goodsItem.Quantity;
 
-                // 2. Распределяем товар. Если ячеек несколько, делим поровну или сколько влезет
                 foreach (var unit in selectedUnits)
                 {
                     if (remaining <= 0) break;
@@ -93,7 +93,6 @@ namespace warehouse_operations_accounting_program.Presenter
                     int canFit = CalculateHowManyCanFit(unit, goodsItem);
                     if (canFit <= 0) continue;
 
-                    // Распределяем пропорционально, чтобы не забивать только первую
                     int limit = (selectedUnits.Count > 1)
                         ? (int)Math.Ceiling((double)goodsItem.Quantity / selectedUnits.Count)
                         : remaining;
@@ -118,7 +117,6 @@ namespace warehouse_operations_accounting_program.Presenter
                 if (remaining > 0)
                     throw new Exception($"Не удалось разместить {remaining} шт. товара '{goodsItem.Name}'.");
 
-                // 3. Убираем "плановый" товар и заменяем его реально размещенным, чтобы не было дубля объема
                 contract.Goods.Remove(goodsItem);
             }
         }
@@ -127,10 +125,7 @@ namespace warehouse_operations_accounting_program.Presenter
         {
             if (contract == null) return;
 
-            // Обновляем ячейки
             _view.ShowStorageUnits(contract.Warehouse.StorageUnits.ToList());
-
-            // ВАЖНО: Показываем в таблице только то, чего НЕТ на складе
             if (contract is KeepingContract kc)
             {
                 var remainingGoods = kc.Goods.Where(g =>
