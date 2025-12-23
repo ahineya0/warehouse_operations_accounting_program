@@ -20,7 +20,6 @@ namespace warehouse_operations_accounting_program.Presenter
             _warehouseService = warehouseService;
         }
 
-        // Имитация входа и загрузка данных
         public void LoginAndLoadData()
         {
             var clientName = _view.AuthClientName;
@@ -46,7 +45,6 @@ namespace warehouse_operations_accounting_program.Presenter
         {
             var goodsInfo = new List<object>();
             var allWarehouses = _warehouseService.GetAll();
-            var groupedGoods = new Dictionary<string, (string GoodName, string Status, int Quantity)>();
 
             foreach (var contract in contracts.OfType<KeepingContract>())
             {
@@ -62,26 +60,13 @@ namespace warehouse_operations_accounting_program.Presenter
                         if (foundInUnit)
                             location = $"На складе: {warehouse.Name} ({warehouse.Address})";
                     }
-
-                    var key = $"{item.Name}|{location}";
-                    if (groupedGoods.ContainsKey(key))
+                    goodsInfo.Add(new
                     {
-                        var existing = groupedGoods[key];
-                        groupedGoods[key] = (existing.GoodName, existing.Status, existing.Quantity + item.Quantity);
-                    }
-                    else
-                        groupedGoods[key] = (item.Name, location, item.Quantity);
+                        GoodName = item.Name,
+                        Status = location,
+                        Quantity = item.Quantity
+                    });
                 }
-            }
-
-            foreach (var goods in groupedGoods.Values)
-            {
-                goodsInfo.Add(new
-                {
-                    GoodName = goods.GoodName,
-                    Status = goods.Status,
-                    Quantity = goods.Quantity
-                });
             }
 
             _view.ShowMyGoods(goodsInfo);
