@@ -33,7 +33,7 @@ namespace warehouse_operations_accounting_program.View
         public void ShowWarehouses(IEnumerable<Warehouse> warehouses)
         {
             dgvWarehouses.DataSource = warehouses.Select(w => new 
-            { w.Name, w.Address, Types = string.Join(", ", w.Type), UnitCount = w.StorageUnits.Count, TotalArea = w.StorageUnits.Sum(u => u.AreaCapacity) }
+            { w.Name, w.Address, Types = string.Join(", ", w.Type), UnitCount = w.StorageUnits.Count, TotalArea = w.StorageUnits.Sum(u => u.AreaCapacity), TotalVolume = w.StorageUnits.Sum(u => u.VolumeCapacity) }
             ).ToList();
         }
 
