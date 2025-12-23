@@ -16,34 +16,27 @@ namespace warehouse_operations_accounting_program.View
     public partial class GoodsSelectionForm : Form
     {
         public List<IGoods> ResultGoods { get; private set; } = new();
-        private List<GoodsBatch> _batches = new();
 
         public void btnAddBatch_Click(object sender, EventArgs e)
         {
-            var batch = new GoodsBatch
-            {
-                Name = txtName.Text,
-                Type = (WarehouseType)cmbType.SelectedItem,
-                Count = (int)numCount.Value,
-                Area = numArea.Value,
-                Volume = numVolume.Value
-            };
-            _batches.Add(batch);
+            var item = new Goods(
+            txtName.Text,
+            (WarehouseType)cmbType.SelectedItem,
+            (int)numCount.Value,
+            numArea.Value,
+            numVolume.Value
+            );
+            ResultGoods.Add(item);
             UpdateGrid();
         }
         public void btnConfirm_Click(object sender, EventArgs e)
         {
-            foreach (var b in _batches)
-            {
-                for (int i = 0; i < b.Count; i++)
-                    ResultGoods.Add(new Goods(b.Name, b.Type, 1, b.Area, b.Volume));
-            }
             this.DialogResult = DialogResult.OK;
         }
         private void UpdateGrid()
         {
             dgvBatches.DataSource = null;
-            dgvBatches.DataSource = _batches.ToList();
+            dgvBatches.DataSource = ResultGoods.Cast<Goods>().ToList();
         }
         public GoodsSelectionForm()
         {
