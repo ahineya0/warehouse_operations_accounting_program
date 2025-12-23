@@ -12,8 +12,9 @@ namespace warehouse_operations_accounting_program.Models
         public int Id { get; set; }
         public decimal AreaCapacity { get; set; }
         public decimal VolumeCapacity { get; set; }
-        public decimal OccupiedArea { get; }
-        public decimal OccupiedVolume { get; }
+        public decimal OccupiedArea => goods.Sum(g => g.TotalArea());
+        public decimal OccupiedVolume => goods.Sum(g => g.TotalVolume());
+        public bool IsFree { get; set; } = true;
         protected StorageUnit() { }
         public StorageUnit(int id, decimal areaCapacity, decimal volumeCapacity) 
         { 
