@@ -67,6 +67,7 @@
             Controls.Add(txtLogin);
             Name = "LoginForm";
             Text = "Авторизация пользователя";
+            FormClosed += LoginForm_FormClosed;
             ResumeLayout(false);
             PerformLayout();
         }

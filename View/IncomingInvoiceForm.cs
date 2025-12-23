@@ -9,46 +9,78 @@ using warehouse_operations_accounting_program.Interfaces;
 using warehouse_operations_accounting_program.Models;
 using warehouse_operations_accounting_program.Presenter;
 using warehouse_operations_accounting_program.Services;
+using warehouse_operations_accounting_program.View.Items;
 
 namespace warehouse_operations_accounting_program.View
 {
     public partial class IncomingInvoiceForm : Form, IIncomingInvoiceView
     {
-        private IncomingInvoicePresenter presenter;
+        private readonly IncomingInvoicePresenter _presenter;
 
-        public IncomingInvoiceForm(IWarehouseService service)
+        public IncomingInvoiceForm(IContractService contractService, IWarehouseService warehouseService)
         {
             InitializeComponent();
-            presenter = new IncomingInvoicePresenter(this, service);
-            presenter.Initialize();
-
-            cmbStorageType.DataSource = Enum.GetValues(typeof(WarehouseType));
+            _presenter = new IncomingInvoicePresenter(this, contractService, warehouseService);
+            _presenter.Initialize();
+            lbStorageUnits.SelectionMode = SelectionMode.MultiExtended;
         }
 
-        public Warehouse SelectedWarehouse => cmbWarehouses.SelectedItem as Warehouse;
+        public string OperatorName => txtOperatorName.Text;
 
-        public Goods GoodsData =>
-            new Goods(txtGoodsName.Text, (WarehouseType)cmbStorageType.SelectedItem, (int)numQuantity.Value, numArea.Value, numVolume.Value);
+        public IContract SelectedContract => (cbContracts.SelectedItem as ContractListItem)?.Contract;
 
-        public void ShowWarehouses(IEnumerable<Warehouse> warehouses)
+        public IEnumerable<IGoods> SelectedGoods =>
+            dgvGoodsToAccept.SelectedRows.Cast<DataGridViewRow>().Select(r => (r.DataBoundItem as GoodsViewItem)?.Goods).Where(g => g != null);
+
+        public IEnumerable<IStorageUnit> SelectedStorageUnits => lbStorageUnits.SelectedItems.Cast<StorageUnitListItem>().Select(i => i.Unit);
+
+        public void ShowActiveContracts(IEnumerable<IContract> contracts)
         {
-            cmbWarehouses.DataSource = warehouses.ToList();
-            cmbWarehouses.DisplayMember = "Name";
+            cbContracts.Items.Clear();
+            foreach (var contract in contracts)
+                cbContracts.Items.Add(new ContractListItem(contract));
+
+            cbContracts.DisplayMember = "DisplayText";
         }
 
-        public void ShowSuccess(string message)
+        public void ShowContractGoods(IEnumerable<IGoods> goods)
         {
-            MessageBox.Show(message);
+            dgvGoodsToAccept.DataSource = null;
+            if (goods != null)
+                dgvGoodsToAccept.DataSource = goods.Select(g => new GoodsViewItem(g)).ToList();
         }
 
-        public void ShowError(string message)
+        public void ShowSuccess(string message) => MessageBox.Show(message, "Успех");
+
+        public void ShowError(string message) => MessageBox.Show(message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        private void cbContracts_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MessageBox.Show(message, "Ошибка");
+            var contract = SelectedContract;
+            if (contract != null)
+                _presenter.RefreshUI(contract);
+        }
+
+        public void ShowStorageUnits(IEnumerable<IStorageUnit> units)
+        {
+            var selectedIds = lbStorageUnits.SelectedItems.Cast<StorageUnitListItem>().Select(i => i.Unit.Id).ToList();
+
+            lbStorageUnits.Items.Clear();
+            foreach (var unit in units)
+            {
+                lbStorageUnits.Items.Add(new StorageUnitListItem(unit));
+            }
+            lbStorageUnits.DisplayMember = "DisplayText";
+
+            for (int i = 0; i < lbStorageUnits.Items.Count; i++)
+            {
+                if (selectedIds.Contains(((StorageUnitListItem)lbStorageUnits.Items[i]).Unit.Id))
+                    lbStorageUnits.SetSelected(i, true);
+            }
         }
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
-            presenter.AcceptGoods();
+            _presenter.Accept();
         }
     }
 }

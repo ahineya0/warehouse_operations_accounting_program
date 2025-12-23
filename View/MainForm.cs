@@ -43,7 +43,7 @@ namespace warehouse_operations_accounting_program.View
 
         public void ShowManagerMenu()
         {
-           managerPanel.Visible = true;
+            managerPanel.Visible = true;
         }
 
         public void ShowClientMenu()
@@ -92,7 +92,13 @@ namespace warehouse_operations_accounting_program.View
         private void MainForm_FormClosed(object sender, FormClosedEventArgs e)
         {
             storage.Save(state);
-            Application.Exit();
+            var login = new LoginForm();
+            login.Show();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+            storage.Save(state);
         }
     }
 }

@@ -28,35 +28,54 @@
         /// </summary>
         private void InitializeComponent()
         {
-            cmbWarehouses = new ComboBox();
-            dgvGoods = new DataGridView();
+            dgvStoredGoods = new DataGridView();
+            txtOperatorName = new TextBox();
+            cbContracts = new ComboBox();
+            lbStorageUnits = new ListBox();
             btnRelease = new Button();
-            ((System.ComponentModel.ISupportInitialize)dgvGoods).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvStoredGoods).BeginInit();
             SuspendLayout();
             // 
-            // cmbWarehouses
+            // dgvStoredGoods
             // 
-            cmbWarehouses.FormattingEnabled = true;
-            cmbWarehouses.Location = new Point(408, 294);
-            cmbWarehouses.Name = "cmbWarehouses";
-            cmbWarehouses.Size = new Size(150, 23);
-            cmbWarehouses.TabIndex = 0;
+            dgvStoredGoods.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvStoredGoods.Location = new Point(66, 27);
+            dgvStoredGoods.Name = "dgvStoredGoods";
+            dgvStoredGoods.Size = new Size(675, 236);
+            dgvStoredGoods.TabIndex = 1;
             // 
-            // dgvGoods
+            // txtOperatorName
             // 
-            dgvGoods.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvGoods.Location = new Point(66, 27);
-            dgvGoods.Name = "dgvGoods";
-            dgvGoods.Size = new Size(601, 236);
-            dgvGoods.TabIndex = 1;
+            txtOperatorName.Location = new Point(410, 350);
+            txtOperatorName.Name = "txtOperatorName";
+            txtOperatorName.Size = new Size(100, 23);
+            txtOperatorName.TabIndex = 3;
+            // 
+            // cbContracts
+            // 
+            cbContracts.FormattingEnabled = true;
+            cbContracts.Location = new Point(537, 350);
+            cbContracts.Name = "cbContracts";
+            cbContracts.Size = new Size(121, 23);
+            cbContracts.TabIndex = 4;
+            cbContracts.SelectedIndexChanged += cbContracts_SelectedIndexChanged;
+            // 
+            // lbStorageUnits
+            // 
+            lbStorageUnits.FormattingEnabled = true;
+            lbStorageUnits.Location = new Point(98, 302);
+            lbStorageUnits.Name = "lbStorageUnits";
+            lbStorageUnits.SelectionMode = SelectionMode.MultiExtended;
+            lbStorageUnits.Size = new Size(120, 94);
+            lbStorageUnits.TabIndex = 7;
             // 
             // btnRelease
             // 
-            btnRelease.Location = new Point(152, 284);
+            btnRelease.Location = new Point(637, 391);
             btnRelease.Name = "btnRelease";
-            btnRelease.Size = new Size(185, 41);
-            btnRelease.TabIndex = 2;
-            btnRelease.Text = "Оформить расходную накладную";
+            btnRelease.Size = new Size(125, 23);
+            btnRelease.TabIndex = 8;
+            btnRelease.Text = "Оформить отпуск";
             btnRelease.UseVisualStyleBackColor = true;
             btnRelease.Click += btnRelease_Click;
             // 
@@ -66,18 +85,23 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(btnRelease);
-            Controls.Add(dgvGoods);
-            Controls.Add(cmbWarehouses);
+            Controls.Add(lbStorageUnits);
+            Controls.Add(cbContracts);
+            Controls.Add(txtOperatorName);
+            Controls.Add(dgvStoredGoods);
             Name = "OutgoingInvoiceForm";
             Text = "OutgoingInvoiceForm";
-            ((System.ComponentModel.ISupportInitialize)dgvGoods).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvStoredGoods).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private ComboBox cmbWarehouses;
-        private DataGridView dgvGoods;
+        private DataGridView dgvStoredGoods;
+        private TextBox txtOperatorName;
+        private ComboBox cbContracts;
+        private ListBox lbStorageUnits;
         private Button btnRelease;
     }
 }

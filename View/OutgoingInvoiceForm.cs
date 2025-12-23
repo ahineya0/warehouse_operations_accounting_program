@@ -9,55 +9,66 @@ using warehouse_operations_accounting_program.Interfaces;
 using warehouse_operations_accounting_program.Models;
 using warehouse_operations_accounting_program.Presenter;
 using warehouse_operations_accounting_program.Services;
+using warehouse_operations_accounting_program.View.Items;
 
 namespace warehouse_operations_accounting_program.View
 {
     public partial class OutgoingInvoiceForm : Form, IOutgoingInvoiceView
     {
-        private OutgoingInvoicePresenter presenter;
+        private readonly OutgoingInvoicePresenter _presenter;
 
-        public OutgoingInvoiceForm(IWarehouseService service)
+        public OutgoingInvoiceForm(IContractService contractService, IWarehouseService warehouseService)
         {
             InitializeComponent();
-            presenter = new OutgoingInvoicePresenter(this, service);
-            presenter.Initialize();
+            _presenter = new OutgoingInvoicePresenter(this, contractService, warehouseService);
+            _presenter.Initialize();
+
+            lbStorageUnits.SelectionMode = SelectionMode.MultiExtended;
         }
 
-        public Warehouse SelectedWarehouse =>
-            cmbWarehouses.SelectedItem as Warehouse;
+        public string OperatorName => txtOperatorName.Text;
 
-        public IGoods SelectedGoods =>
-            dgvGoods.CurrentRow?.DataBoundItem as IGoods;
+        public IContract SelectedContract => (cbContracts.SelectedItem as ContractListItem)?.Contract;
 
-        public void ShowWarehouses(IEnumerable<Warehouse> warehouses)
+        public IGoods SelectedGoods => (dgvStoredGoods.CurrentRow?.DataBoundItem as GoodsViewItem)?.Goods;
+
+        public IEnumerable<IStorageUnit> SelectedStorageUnits =>
+            lbStorageUnits.SelectedItems.Cast<StorageUnitListItem>().Select(i => i.Unit);
+
+        public void ShowActiveContracts(IEnumerable<IContract> contracts)
         {
-            cmbWarehouses.DataSource = warehouses.ToList();
-            cmbWarehouses.DisplayMember = "Name";
+            cbContracts.Items.Clear();
+            foreach (var contract in contracts)
+                cbContracts.Items.Add(new ContractListItem(contract));
+            cbContracts.DisplayMember = "DisplayText";
         }
 
-        public void ShowGoods(IEnumerable<IGoods> goods)
+        public void ShowStoredGoods(IEnumerable<IGoods> goods)
         {
-            dgvGoods.DataSource = goods.ToList();
+            dgvStoredGoods.DataSource = null;
+            if (goods != null)
+                dgvStoredGoods.DataSource = goods.Select(g => new GoodsViewItem(g)).ToList();
         }
 
-        public void ShowError(string message)
+        public void ShowStorageUnits(IEnumerable<IStorageUnit> units)
         {
-            MessageBox.Show(message, "Ошибка");
+            lbStorageUnits.Items.Clear();
+            foreach (var unit in units)
+                lbStorageUnits.Items.Add(new StorageUnitListItem(unit));
+            lbStorageUnits.DisplayMember = "DisplayText";
         }
 
-        public void ShowSuccess(string message)
+        private void cbContracts_SelectedIndexChanged(object sender, EventArgs e)
         {
-            MessageBox.Show(message);
-        }
-
-        private void cmbWarehouses_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            presenter.WarehouseChanged();
+            _presenter.OnContractChanged();
         }
 
         private void btnRelease_Click(object sender, EventArgs e)
         {
-            presenter.ReleaseGoods();
+            _presenter.Release();
         }
+
+        public void ShowSuccess(string message) => MessageBox.Show(message, "Успех");
+        public void ShowError(string message) => MessageBox.Show(message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
     }
 }

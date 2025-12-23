@@ -7,10 +7,15 @@ namespace warehouse_operations_accounting_program.Interfaces
 {
     public interface IIncomingInvoiceView
     {
-        Warehouse SelectedWarehouse { get; }
-        Goods GoodsData { get; }
+        IContract SelectedContract { get; }
+        IEnumerable<IGoods> SelectedGoods { get; }
+        IEnumerable<IStorageUnit> SelectedStorageUnits { get; }
+        void ShowStorageUnits(IEnumerable<IStorageUnit> units);
+        string OperatorName { get; }
 
-        void ShowWarehouses(IEnumerable<Warehouse> warehouses);
+        void ShowActiveContracts(IEnumerable<IContract> contracts);
+        void ShowContractGoods(IEnumerable<IGoods> goods);
+
         void ShowSuccess(string message);
         void ShowError(string message);
     }

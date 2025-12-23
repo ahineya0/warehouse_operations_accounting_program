@@ -41,12 +41,12 @@ namespace warehouse_operations_accounting_program.Presenter
 
         public void OpenIncoming()
         {
-            view.ShowAsWingow(new IncomingInvoiceForm(warehouseService));
+            view.ShowAsWingow(new IncomingInvoiceForm(contractService, warehouseService));
         }
 
         public void OpenOutgoing()
         {
-            view.ShowAsWingow(new OutgoingInvoiceForm(warehouseService));
+            view.ShowAsWingow(new OutgoingInvoiceForm(contractService, warehouseService));
         }
         public void OpenClientManagement()
         {

@@ -38,6 +38,7 @@
             clientPanel = new Panel();
             btnClient = new Button();
             adminPanel = new Panel();
+            btnSave = new Button();
             operatorPanel.SuspendLayout();
             managerPanel.SuspendLayout();
             clientPanel.SuspendLayout();
@@ -141,11 +142,22 @@
             adminPanel.TabIndex = 4;
             adminPanel.Visible = false;
             // 
+            // btnSave
+            // 
+            btnSave.Location = new Point(534, 426);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(75, 48);
+            btnSave.TabIndex = 5;
+            btnSave.Text = "Сохранить изменения";
+            btnSave.UseVisualStyleBackColor = true;
+            btnSave.Click += btnSave_Click;
+            // 
             // MainForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1057, 517);
+            Controls.Add(btnSave);
             Controls.Add(adminPanel);
             Controls.Add(clientPanel);
             Controls.Add(operatorPanel);
@@ -171,5 +183,6 @@
         private Panel clientPanel;
         private Panel adminPanel;
         private Button btnClient;
+        private Button btnSave;
     }
 }

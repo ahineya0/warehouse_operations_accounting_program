@@ -15,8 +15,7 @@ namespace warehouse_operations_accounting_program.Interfaces
         decimal VolumeCapacity { get; set; }
         decimal FreeAreaCapacity();
         decimal FreeVolumeCapacity();
-        void OccupyByRent(RentContract contract);
-        void ReleaseFromRent();
+        bool IsFree { get; set; }
         bool CanStore(IGoods goods);
         void AddGoods(IGoods goods);
         void RemoveGoods(IGoods goods);

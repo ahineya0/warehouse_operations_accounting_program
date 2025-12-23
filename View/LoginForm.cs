@@ -38,5 +38,10 @@ namespace warehouse_operations_accounting_program.View
         {
             presenter.Login();
         }
+
+        private void LoginForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
